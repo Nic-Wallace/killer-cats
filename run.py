@@ -36,18 +36,44 @@ def step_one():
     print("Stumbling through the forest, you find a small dirt path.")
     print("It leads left, and right.")
     while True:
-        answer = input("Which way do you go? (left/right)")
+        answer = input("Which way do you go? (left/right): ")
         if answer[0].lower().strip() == "l":
-            # intro()
+            print("This path is dimly lit, you hear rustling in the bushes...")
+            print("The gurilla warfare faction of cats leap from the bushes and attack.")
+            print("Your last moments are a flurry of fur and bullets.")
+            print("You are dead.")
+            try_again()
             break
         elif answer[0].lower().strip() == "r":
-            # clear()
-            # print("Thanks for playing Killer Cats.")
+            step_two()
             break
         else:
             clear()
             print(f"{answer} Is not valid, please choose again")
 
+
+def step_two():
+    """
+    Second step of the game from going down the correct path.
+    """
+    clear()
+    print("This path gets narrower and narrower the farther you go.")
+    print("It is getting hard to see.")
+    print("You realise the bushes have gone, and you are now walking through a stone passage way.")
+    print("Option #1: You keep moving foreward.")
+    print("Option #2: You turn back.")
+    while True:
+        answer = input("Which option will you choose? (1/2): ")
+        if answer.strip() == "1":
+            step_three()
+            break
+        elif answer.strip() == "2":
+            print("death scene")
+            try_again()
+            break
+        else:
+            clear()
+            print(f"{answer} Is not valid, please choose again")
 
 def intro():
     """
