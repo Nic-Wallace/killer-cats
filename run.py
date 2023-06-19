@@ -35,7 +35,18 @@ def step_one():
     print("You sprint back, away from the growling.")
     print("Stumbling through the forest, you find a small dirt path.")
     print("It leads left, and right.")
-    answer = input("Which way do you go? (left/right)")
+    while True:
+        answer = input("Which way do you go? (left/right)")
+        if answer[0].lower().strip() == "l":
+            # intro()
+            break
+        elif answer[0].lower().strip() == "r":
+            # clear()
+            # print("Thanks for playing Killer Cats.")
+            break
+        else:
+            clear()
+            print(f"{answer} Is not valid, please choose again")
 
 
 def intro():
