@@ -7,11 +7,16 @@ def try_again():
     Asks the user if they want to try the game again.
     Sends them back to the start or closes the program.
     """
-    answer = input("Would you like to try again? (yes/no): ")
-    if answer.lower().strip() == "y":
-        intro()
-    else: 
-        pass
+    while True:
+        answer = input("Would you like to try again? (yes/no): ")
+        if answer[0].lower().strip() == "y":
+            intro()
+            break
+        elif answer[0].lower().strip() == "n":
+            print("Thanks for playing Killer Cats.")
+            break
+        else:
+            print(f"{answer} Is not valid, please choose again")
 
 def step_one():
     """
@@ -28,22 +33,28 @@ def intro():
     """
     print("You wake up, surrounded by trees and very confused.")
     print('"How did I get here?"')
-    print("Your head hurts, you\'re covered in scratches.")
+    print("Your head hurts, you're covered in scratches.")
     print("You hear growling in front of you. It almost seems... familiar.")
     print("But you can't quite remember what happened.")
-    print("Option #1: Creep towards the growling to investigate.")
-    print("Option #2: Run away from the growling as fast as possible.")
-    answer = input("Which option will you choose? (1/2): ")
+    while True:
+        print("Option #1: Creep towards the growling to investigate.")
+        print("Option #2: Run away from the growling as fast as possible.")
+        answer = input("Which option will you choose? (1/2): ")
 
-    if answer.strip() == "1":
-        print("You creep towards the growling.")
-        print("The thick vegetation prevents you from seeing very far ahead.")
-        print("But you continue on,")
-        print("...straight into an army of cats...")
-        print("Your last moments are a flurry of fur and hissing.")
-        print("You have failed.")
-        try_again()
-    elif answer.strip() == "2":
-        step_one()
+        if answer.strip() == "1":
+            print("You creep towards the growling.")
+            print("The thick vegetation prevents you from seeing very far ahead.")
+            print("But you continue on,")
+            print("...straight into an army of cats...")
+            print("Your last moments are a flurry of fur and hissing.")
+            print("You have failed.")
+            try_again()
+            break
+        elif answer.strip() == "2":
+            step_one()
+            break
+        else:
+            print(f"{answer} Is not valid, please choose again")
+
 
 intro()
