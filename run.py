@@ -1,6 +1,12 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+import os
+
+
+def clear():
+    """
+    Clear function to clean-up the terminal so things don't get messy.
+    """
+    os.system("cls" if os.name == "nt" else "clear")
+
 
 def try_again(): 
     """
@@ -13,24 +19,30 @@ def try_again():
             intro()
             break
         elif answer[0].lower().strip() == "n":
+            clear()
             print("Thanks for playing Killer Cats.")
             break
         else:
+            clear()
             print(f"{answer} Is not valid, please choose again")
+
 
 def step_one():
     """
     First step of the game from going down the correct path.
     """
+    clear()
     print("You sprint back, away from the growling.")
     print("Stumbling through the forest, you find a small dirt path.")
     print("It leads left, and right.")
     answer = input("Which way do you go? (left/right)")
 
+
 def intro():
     """
     Called to start the game, gives the first question.
     """
+    clear()
     print("You wake up, surrounded by trees and very confused.")
     print('"How did I get here?"')
     print("Your head hurts, you're covered in scratches.")
@@ -40,6 +52,7 @@ def intro():
         print("Option #1: Creep towards the growling to investigate.")
         print("Option #2: Run away from the growling as fast as possible.")
         answer = input("Which option will you choose? (1/2): ")
+        clear()
 
         if answer.strip() == "1":
             print("You creep towards the growling.")
@@ -54,7 +67,10 @@ def intro():
             step_one()
             break
         else:
+            clear()
             print(f"{answer} Is not valid, please choose again")
 
 
-intro()
+if __name__ == "__main__":
+    clear()
+    intro()
