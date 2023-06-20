@@ -68,12 +68,51 @@ def step_two():
             step_three()
             break
         elif answer.strip() == "2":
-            print("death scene")
+            print("Turning around at this point is no easy feat, but you do it anyway.")
+            print("You had a feeling something big and scary was waiting for you,")
+            print("...and you're scared of the dark.")
+            print("After a long time, you start to see light at the end of the tunnel")
+            print("Your eyes take a while to adjust to the brightness,")
+            print("But at this relieving sight you sprint towards it blindly")
+            print("The first thing you see is a trail of dust, rising up into the air.")
+            print("Following it down to the ground, your eyes land on a group of angry cats,")
+            print("Armed to the teeth.")
+            print("Your last moments are a flurry of fur and dust.")
+            print("You are dead.")
             try_again()
             break
         else:
             clear()
             print(f"{answer} Is not valid, please choose again")
+
+
+def step_three():
+    """
+    Second step of the game from going down the correct path.
+    """
+    clear()
+    print("You make your way deeper into the tunnel, tripping on stones in complete darkness.")
+    print("Slowly you regain vision, a source of light becomes clearer as the tunnel gives way to a cavern.")
+    print("The cave is lit by a small hole in the ceiling. You can see illuminated debris and rubbish on the wet ground.")
+    print("You see two more tunnels at the other end of this space, maybe they lead out of here?")
+    print("Option #1: Investigate the cave.")
+    print("Option #2: Take the tunnel to the left.")
+    print("Option #3: Take the tunnel to the right.")
+    while True:
+        answer = input("Which option will you choose? (1/2/3): ")
+        if answer.strip() == "1":
+            print("investigate tunnel")
+            break
+        elif answer.strip() == "2":
+            print("route")
+            break
+        elif answer.strip() == "3":
+            print("hole in the ground")
+            break
+        else:
+            clear()
+            print(f"{answer} Is not valid, please choose again")
+
 
 def intro():
     """
