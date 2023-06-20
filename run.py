@@ -27,7 +27,7 @@ def try_again():
             print(f"{answer} Is not valid, please choose again")
 
 
-def step_one():
+def dirt_path():
     """
     First step of the game from going down the correct path.
     """
@@ -45,14 +45,14 @@ def step_one():
             try_again()
             break
         elif answer[0].lower().strip() == "r":
-            step_two()
+            stone_passage()
             break
         else:
             clear()
             print(f"{answer} Is not valid, please choose again")
 
 
-def step_two():
+def stone_passage():
     """
     Second step of the game from going down the correct path.
     """
@@ -65,7 +65,7 @@ def step_two():
     while True:
         answer = input("Which option will you choose? (1/2): ")
         if answer.strip() == "1":
-            step_three()
+            cavern()
             break
         elif answer.strip() == "2":
             print("Turning around at this point is no easy feat, but you do it anyway.")
@@ -86,7 +86,7 @@ def step_two():
             print(f"{answer} Is not valid, please choose again")
 
 
-def step_three():
+def cavern():
     """
     Second step of the game from going down the correct path.
     """
@@ -101,13 +101,10 @@ def step_three():
     while True:
         answer = input("Which option will you choose? (1/2/3): ")
         if answer.strip() == "1":
-            print("investigate tunnel")
+            print("hole in the ground")
             break
         elif answer.strip() == "2":
             print("route")
-            break
-        elif answer.strip() == "3":
-            print("hole in the ground")
             break
         else:
             clear()
@@ -140,7 +137,7 @@ def intro():
             try_again()
             break
         elif answer.strip() == "2":
-            step_one()
+            dirt_path()
             break
         else:
             clear()
