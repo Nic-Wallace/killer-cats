@@ -93,18 +93,31 @@ def cavern():
     clear()
     print("You make your way deeper into the tunnel, tripping on stones in complete darkness.")
     print("Slowly you regain vision, a source of light becomes clearer as the tunnel gives way to a cavern.")
-    print("The cave is lit by a small hole in the ceiling. You can see illuminated debris and rubbish on the wet ground.")
+    print("The cave is lit by a small hole in the ceiling. You can see illuminated debris on the wet ground.")
+    print("On further inspection, you see that someone... lived here?")
+    print("Rummaging through a pile of clothes and bedding, you find a backpack with a knife, an empty gun, and rope inside.")
+    print("These may come in handy if things go south.")
     print("You see two more tunnels at the other end of this space, maybe they lead out of here?")
-    print("Option #1: Investigate the cave.")
     print("Option #2: Take the tunnel to the left.")
     print("Option #3: Take the tunnel to the right.")
     while True:
-        answer = input("Which option will you choose? (1/2/3): ")
-        if answer.strip() == "1":
-            print("hole in the ground")
+        answer = input("Which way do you go? (left/right): ")
+        if answer[0].lower().strip() == "l":
+            print("You make your way over to the left tunnel.")
+            print("The light slowly disappears as you move forawrds, but then it begins to come back...")
+            print("It looks like you are approaching a hole in the ground of this tunnel, and there is light spilling out of it.")
+            print("Once you reach it, you peer down into the hole, and wait for your eyes to adjust.")
+            print("You see what looks like another cave, but this one is filled with light, and must be the way out!")
+            print("You look for something to secure your rope to, and find a column of stone that will work.")
+            print("You abseil down into this cave with ease and delight. Outside you see lush trees and hills as you untie your rope.")
+            print("You look around the cave, and upon looking a little deeper, you see a grizzly bear.")
+            print("It starts to rise... and drool.")
+            print("Your last moments are a flurry of fur and very, very, big teeth.")
+            print("You are dead.")
+            try_again()
             break
-        elif answer.strip() == "2":
-            print("route")
+        elif answer[0].lower().strip() == "r":
+            print("next path")
             break
         else:
             clear()
