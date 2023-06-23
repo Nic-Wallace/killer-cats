@@ -62,8 +62,8 @@ def stone_passage():
     print("It is getting hard to see.")
     print("You realise the bushes have gone, and you are now walking through a stone passage way.")
     while True:
-    print("Option #1: You keep moving foreward.")
-    print("Option #2: You turn back.\n")
+        print("Option #1: You keep moving foreward.")
+        print("Option #2: You turn back.\n")
         answer = input("Which option will you choose? (1/2): ")
         if answer.strip() == "1":
             cavern()
