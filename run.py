@@ -165,7 +165,10 @@ def welcome():
     clear()
     print(title.title)
     print("\nWelcome to Killer cats!\n")
-    print("To embark on this journey through thr apocolypse will be no easy feat")
+    print("To embark on this journey through the apocalypse will be no easy feat.")
+    print("At each step in your path, you will be faced with a choice.")
+    print("This choice could lead to your death, or your salvation. So choose wisely.")
+    print("Be warned: This world is run by intelligent cats equipped with opposable thumbs\nand ammunition. Keep your wits about you survivor, and don't let the cats win.\n")
     while True:
         human_verification = input("Verify your humanity by typing 'human' here, no cats allowed!: ")
         if human_verification[0].lower().strip() == "h":
