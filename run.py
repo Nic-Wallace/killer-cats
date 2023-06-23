@@ -32,9 +32,10 @@ def dirt_path():
     First step of the game from going down the correct path.
     """
     clear()
-    print("You sprint back, away from the growling.")
-    print("Stumbling through the forest, you find a small dirt path.")
-    print("It leads left, and right.")
+    print("You sprint back, away from the growling and through the forest.")
+    print("It seems like evening, and the light is quickly fading as you quickly try to find a way out.")
+    print("Stumbling through the trees, you find a small dirt path.")
+    print("It leads left, and right./n")
     while True:
         answer = input("Which way do you go? (left/right): ")
         if answer[0].lower().strip() == "l":
@@ -157,6 +158,27 @@ def intro():
             print(f"{answer} Is not valid, please choose again")
 
 
+def welcome():
+    """
+    First thing displayed when the program is run.
+    """
+    clear()
+    print(title.title)
+    print("\nWelcome to Killer cats!\n")
+    print("To embark on this journey through thr apocolypse will be no easy feat")
+    while True:
+        human_verification = input("Verify your humanity by typing 'human' here, no cats allowed!: ")
+        if human_verification[0].lower().strip() == "h":
+            intro()
+        elif human_verification[0].lower().strip() == "c":
+            clear()
+            print("NO CATS ALLOWED!")
+        else: 
+            clear()
+            print(f"{human_verification} Is not valid, please choose again")
+
+
+
 if __name__ == "__main__":
     clear()
-    intro()
+    welcome()
