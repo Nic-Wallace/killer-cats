@@ -65,3 +65,14 @@ about how to play.
     - Enable the user to add a name for their character which will be used throughout the game.
 - Level Art
     - Include unique art at the top of the screen for each level.
+
+## Tools & Technologies Used
+
+- [CSS](https://en.wikipedia.org/wiki/CSS) used for the mock terminal, provided by Code Institute.
+- [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
+- [GitHub](https://github.com) used for secure online code storage.
+- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
+- [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
+- [HTML](https://en.wikipedia.org/wiki/HTML) used for the mock terminal, provided by Code Institute.
+- [JavaScript](https://www.javascript.com) used for the mock terminal, provided by Code Institute.
+- [Python](https://www.python.org) used as the back-end programming language.
