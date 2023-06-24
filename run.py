@@ -200,19 +200,28 @@ def hillside():
     """
     clear()
     print("You head into the tunnel, and after walking some distance in the darkness,\nyou start to get a very bad smell.")
-    print("Being more cautious now, you draw your knife, trying to be as quiet as you can\nmoving forwards.")
-    print("Eventually, as the smell gets worse you start to see some light ahead.")
+    print("Being more cautious now, you draw your knife, trying to be as quiet as you can.")
+    print("Eventually, as the smell gets worse, you start to see some light up ahead.")
     print("You pick up the pace. As you reach the tunnel exit, you see a small pile of fur.")
     print("It seems to be a cat, long dead, wearing a miniature tactical vest strapped with\nammo and a tiny knife.")
     print("You hold your breath and take the ammo, which fits your gun! You load it up and\nkeep a tight grip on it.")
-    print("Scanning the area as you move, you make your way uphill to get a good view on \nthe area.")
-    print("")
+    print("Scanning the area as you move, you make your way uphill to get a good view on\nthe area.")
+    print("From the top of the hill, you see a beautiful vally, glowing in the morning sun.")
+    print("On a nearby hill, you see a small trail of smoke rising from the trees.")
+    print("In the other direction, you see a road leading to a large town.")
+    print('"Maybe there are people around, people that can help me!"')
+    print("Despite how hungry and tired you are, you are now filled with hope.")
     while True:
-        answer = input("Which tunnel do you go through? (left/right): ")
-        if answer[0].lower().strip() == "l":
-            print("")
-        elif answer[0].lower().strip() == "r":
-            pass
+        print("Option #1: You go to the smoke on the hill.")
+        print("Option #2: You go down to the road and into the town.\n")
+        answer = input("Which option will you choose? (1/2): ")
+        if answer.strip() == "1":
+            camp()
+            break
+        elif answer.strip() == "2":
+            print("Your are dead.")
+            try_again()
+            break
         else:
             clear()
             print(f"{answer} Is not valid, please choose again.\n")
