@@ -89,15 +89,18 @@ def stone_passage():
 
 def cavern():
     """
-    Second step of the game from going down the correct path.
+    Third step of the game from going down the correct path.
     """
     clear()
     print("You make your way deeper into the tunnel, tripping on stones in complete darkness.")
     print("Slowly you regain vision, a source of light becomes clearer as the tunnel gives way to a cavern.")
-    print("The cave is lit by a small hole in the ceiling. You can see illuminated debris on the wet ground.")
+    print("The cave is lit by a small hole in the ceiling, letting in light of the full moon.")
+    print("You spot some illuminated debris on the damp ground.")
     print("On further inspection, you see that someone... lived here?")
     print("Rummaging through a pile of clothes and bedding, you find a backpack with a knife, an empty gun, and rope inside.")
     print("These may come in handy if things go south.")
+    print("For now, you try to get some sleep here before deciding where to go.\n")
+    print("You wake up to a much brighter cave, and get ready to go.")
     print("You see two more tunnels at the other end of this space, maybe they lead out of here?\n")
     while True:
         answer = input("Which tunnel do you go through? (left/right): ")
@@ -116,8 +119,32 @@ def cavern():
             try_again()
             break
         elif answer[0].lower().strip() == "r":
-            print("next path")
+            hillside()
             break
+        else:
+            clear()
+            print(f"{answer} Is not valid, please choose again.\n")
+
+
+def hillside():
+    """
+    Fourth step of the game from going down the correct path.
+    """
+    clear()
+    print("You head into the tunnel, and after walking some way down in the darkness, you start to get a very bad smell.")
+    print("Being more cautious now, you draw your knife, trying to be as quiet as you can moving forwards.")
+    print("Eventually, as the smell gets worse you start to see some light ahead.")
+    print("You pick up the pace. As you reach the exit of the tunnel, you see a small pile of fur.")
+    print("It seems to be a cat, long dead, wearing a miniature tactical vest strapped with ammo and a tiny knife.")
+    print("You hold your breath and take the ammo, which fits your gun! You load it up and keep a tight grip on it.")
+    print("Scanning the area as you move, you make your way uphill to get a good view on the area.")
+    print("")
+    while True:
+        answer = input("Which tunnel do you go through? (left/right): ")
+        if answer[0].lower().strip() == "l":
+            print("")
+        elif answer[0].lower().strip() == "r":
+            pass
         else:
             clear()
             print(f"{answer} Is not valid, please choose again.\n")
