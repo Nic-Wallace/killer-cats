@@ -27,6 +27,75 @@ def try_again():
             print(f"{answer} Is not valid, please choose again.\n")
 
 
+# def verification():
+#     while True:
+#         human_verification = input("Verify your humanity by typing 'human' here, no cats allowed!: ")
+#         if human_verification[0].lower().strip() == "h":
+#             intro()
+#         elif human_verification[0].lower().strip() == "c":
+#             clear()
+#             print("NO CATS ALLOWED!\n")
+#         else: 
+#             clear()
+#             print(f"{human_verification} Is not valid, please choose again.\n")
+
+
+def welcome():
+    """
+    First thing displayed when the program is run.
+    """
+    clear()
+    print(title.title)
+    print("\nWelcome to Killer cats!\n")
+    print("To embark on this journey through the apocalypse will be no easy feat.")
+    print("At each step in your path, you will be faced with a choice.")
+    print("This choice could lead to your death, or your salvation. So choose wisely.")
+    print("Be warned: This world is run by intelligent cats equipped with opposable thumbs\nand ammunition. Keep your wits about you survivor, and don't let the cats win.\n")
+    while True:
+        human_verification = input("Verify your humanity by typing 'human' here, no cats allowed!: ")
+        if human_verification[0].lower().strip() == "h":
+            intro()
+        elif human_verification[0].lower().strip() == "c":
+            clear()
+            print("NO CATS ALLOWED!\n")
+        else: 
+            clear()
+            print(f"{human_verification} Is not valid, please choose again.\n")
+
+
+def intro():
+    """
+    Called to start the game, gives the first question.
+    """
+    clear()
+    print("You wake up, surrounded by trees and very confused.")
+    print('"How did I get here?"')
+    print("Your head hurts, you're covered in scratches.")
+    print("You hear growling in front of you. It almost seems... familiar.")
+    print("But you can't quite remember what happened.\n")
+    while True:
+        print("Option #1: Creep towards the growling to investigate.")
+        print("Option #2: Run away from the growling as fast as possible.\n")
+        answer = input("Which option will you choose? (1/2): ")
+        clear()
+
+        if answer.strip() == "1":
+            print("You creep towards the growling.")
+            print("The thick vegetation prevents you from seeing very far ahead.")
+            print("But you continue on,")
+            print("...straight into an army of cats...\n")
+            print("Your last moments are a flurry of fur and hissing.")
+            print("You have failed.")
+            try_again()
+            break
+        elif answer.strip() == "2":
+            dirt_path()
+            break
+        else:
+            clear()
+            print(f"{answer} Is not valid, please choose again.\n")
+
+
 def dirt_path():
     """
     First step of the game from going down the correct path.
@@ -147,75 +216,6 @@ def hillside():
         else:
             clear()
             print(f"{answer} Is not valid, please choose again.\n")
-
-
-def intro():
-    """
-    Called to start the game, gives the first question.
-    """
-    clear()
-    print("You wake up, surrounded by trees and very confused.")
-    print('"How did I get here?"')
-    print("Your head hurts, you're covered in scratches.")
-    print("You hear growling in front of you. It almost seems... familiar.")
-    print("But you can't quite remember what happened.\n")
-    while True:
-        print("Option #1: Creep towards the growling to investigate.")
-        print("Option #2: Run away from the growling as fast as possible.\n")
-        answer = input("Which option will you choose? (1/2): ")
-        clear()
-
-        if answer.strip() == "1":
-            print("You creep towards the growling.")
-            print("The thick vegetation prevents you from seeing very far ahead.")
-            print("But you continue on,")
-            print("...straight into an army of cats...\n")
-            print("Your last moments are a flurry of fur and hissing.")
-            print("You have failed.")
-            try_again()
-            break
-        elif answer.strip() == "2":
-            dirt_path()
-            break
-        else:
-            clear()
-            print(f"{answer} Is not valid, please choose again.\n")
-
-
-def welcome():
-    """
-    First thing displayed when the program is run.
-    """
-    clear()
-    print(title.title)
-    print("\nWelcome to Killer cats!\n")
-    print("To embark on this journey through the apocalypse will be no easy feat.")
-    print("At each step in your path, you will be faced with a choice.")
-    print("This choice could lead to your death, or your salvation. So choose wisely.")
-    print("Be warned: This world is run by intelligent cats equipped with opposable thumbs\nand ammunition. Keep your wits about you survivor, and don't let the cats win.\n")
-    while True:
-        human_verification = input("Verify your humanity by typing 'human' here, no cats allowed!: ")
-        if human_verification[0].lower().strip() == "h":
-            intro()
-        elif human_verification[0].lower().strip() == "c":
-            clear()
-            print("NO CATS ALLOWED!\n")
-        else: 
-            clear()
-            print(f"{human_verification} Is not valid, please choose again.\n")
-
-
-# def verification():
-#     while True:
-#         human_verification = input("Verify your humanity by typing 'human' here, no cats allowed!: ")
-#         if human_verification[0].lower().strip() == "h":
-#             intro()
-#         elif human_verification[0].lower().strip() == "c":
-#             clear()
-#             print("NO CATS ALLOWED!\n")
-#         else: 
-#             clear()
-#             print(f"{human_verification} Is not valid, please choose again.\n")
 
 
 if __name__ == "__main__":
