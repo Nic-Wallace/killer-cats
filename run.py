@@ -179,6 +179,19 @@ def welcome():
             print(f"{human_verification} Is not valid, please choose again.\n")
 
 
+# def verification():
+#     while True:
+#         human_verification = input("Verify your humanity by typing 'human' here, no cats allowed!: ")
+#         if human_verification[0].lower().strip() == "h":
+#             intro()
+#         elif human_verification[0].lower().strip() == "c":
+#             clear()
+#             print("NO CATS ALLOWED!\n")
+#         else: 
+#             clear()
+#             print(f"{human_verification} Is not valid, please choose again.\n")
+
+
 if __name__ == "__main__":
     clear()
     welcome()
