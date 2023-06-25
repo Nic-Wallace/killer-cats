@@ -207,7 +207,16 @@ def hillside():
             camp()
             break
         elif answer.strip() == "2":
-            print("Your are dead.")
+            print("You head down the hill and get to the road after checking the coast is clear.")
+            print("Excited to possibly find people, you jog towards the fortified town.")
+            print("The barricades on the road make the only entry option a narrow path in and out.")
+            print("Creeping aound the corner of the gates, you clutch the gun, ready to fire.")
+            print("You see a young man jump from resting at his post, an AK strapped to his chest.")
+            print("A look of hope, then fear and sadness crosses his face as he sees you,\nthen looks to his left where you see a platoon of cats rushing in.")
+            print("They bypass the man and run straight for you.")
+            print("You empty your gun and reach for the knife, but it is no use. They are too many.")
+            print("Your last moments are a flurry of fur and tiny claws.")
+            print("You are dead.")
             try_again()
             break
         else:
