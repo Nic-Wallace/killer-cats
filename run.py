@@ -27,19 +27,6 @@ def try_again():
             print(f"{answer} Is not valid, please choose again.\n")
 
 
-# def verification():
-#     while True:
-#         human_verification = input("Verify your humanity by typing 'human' here, no cats allowed!: ")
-#         if human_verification[0].lower().strip() == "h":
-#             intro()
-#         elif human_verification[0].lower().strip() == "c":
-#             clear()
-#             print("NO CATS ALLOWED!\n")
-#         else: 
-#             clear()
-#             print(f"{human_verification} Is not valid, please choose again.\n")
-
-
 def welcome():
     """
     First thing displayed when the program is run.
@@ -221,6 +208,26 @@ def hillside():
             break
         elif answer.strip() == "2":
             print("Your are dead.")
+            try_again()
+            break
+        else:
+            clear()
+            print(f"{answer} Is not valid, please choose again.\n")
+
+
+def camp():
+    """
+    Fifth step of the game from going down the correct path.
+    """
+    clear()
+    print("")
+    while True:
+        answer = input("")
+        if answer[0].lower().strip() == "":
+            sixth_path()
+            break
+        elif answer[0].lower().strip() == "":
+            print("You are dead.")
             try_again()
             break
         else:
