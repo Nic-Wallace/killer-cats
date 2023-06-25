@@ -219,7 +219,7 @@ def hillside():
             print("You see a young man jump from resting at his post, an AK strapped to his chest.")
             print("A look of hope, then fear and sadness crosses his face as he sees you,\nthen looks to his left where you see a platoon of cats rushing in.")
             print("They bypass the man and run straight for you.")
-            print("You empty your gun and reach for the knife, but it is no use. They are too many.")
+            print("You empty your gun and reach for the knife, but it is no use. They are too many.\n")
             print("Your last moments are a flurry of fur and tiny knives.")
             print("You are dead.")
             try_again()
@@ -253,6 +253,13 @@ def camp():
             break
         elif answer[0].lower().strip() == "f":
             print("You stay, drawing your weapons to fight beside your new friends.")
+            print("The rustling in the bushes spreads around you in a circle, you're now trapped.")
+            print("Panic sets in, you feel the sweat gather on your forehead.")
+            print("Your companions look terrified but they are holding position.")
+            print("Slowly, you see cats start to come out from the bushes, snarling at you all.")
+            print("Your friends leap at them and attack, you follow suit.")
+            print("You take out a few of them in the fight, but you know defeat is near.\n")
+            print("You fight well, but in the end your last moments are a flurry of fur and snarls.")
             print("You are dead.")
             try_again()
             break
