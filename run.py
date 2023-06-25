@@ -55,6 +55,7 @@ def welcome():
         human_verification = input("Verify your humanity by typing 'human' here, no cats allowed!: ")
         if human_verification[0].lower().strip() == "h":
             intro()
+            break
         elif human_verification[0].lower().strip() == "c":
             clear()
             print("NO CATS ALLOWED!\n")
