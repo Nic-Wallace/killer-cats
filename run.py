@@ -246,6 +246,27 @@ def camp():
             print(f"{answer} Is not valid, please choose again.\n")
 
 
+def final_path():
+    """
+    Final step of the game.
+    """
+    clear()
+    print("Final story")
+    while True:
+        answer = input("")
+        if answer.strip() == "1":
+            print("You are dead.")
+            try_again()
+            break
+        elif answer.strip() == "2":
+            print("You have won!")
+            break
+        else:
+            clear()
+            print(f"{answer} Is not valid, please choose again.\n")
+
+
 if __name__ == "__main__":
     clear()
     welcome()
+
