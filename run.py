@@ -93,6 +93,7 @@ def dirt_path():
     print("Stumbling through the tall trees and thick vegetation, you run straight onto a\nsmall dirt path. It leads left, and right.\n")
     while True:
         answer = input("Which way do you go? (left/right): ")
+        clear()
         if answer[0].lower().strip() == "l":
             print("This path is dimly lit, you hear rustling in the bushes...")
             print("The gurilla warfare faction of cats leap from the bushes and attack.\n")
@@ -123,6 +124,7 @@ def stone_passage():
         print("Option #1: You keep moving foreward.")
         print("Option #2: You turn back.\n")
         answer = input("Which option will you choose? (1/2): ")
+        clear()
         if answer.strip() == "1":
             cavern()
             break
@@ -161,6 +163,7 @@ def cavern():
     print("You see two more tunnels at the other end of this space,\nmaybe they lead out of here?\n")
     while True:
         answer = input("Which tunnel do you go through? (left/right): ")
+        clear()
         if answer[0].lower().strip() == "l":
             print("You make your way over to the left tunnel.")
             print("The light slowly disappears as you move forawrds, then it begins to come back,\nfrom a different source...")
@@ -204,6 +207,7 @@ def hillside():
         print("Option #1: You go to the smoke on the hill.")
         print("Option #2: You go down to the road and into the town.\n")
         answer = input("Which option will you choose? (1/2): ")
+        clear()
         if answer.strip() == "1":
             camp()
             break
@@ -243,6 +247,7 @@ def camp():
     print("You can draw your weapons and fight, but you also know where the settlement is.")
     while True:
         answer = input("Do you run to safety, or do you stay to fight? (run/fight): ")
+        clear()
         if answer[0].lower().strip() == "r":
             final_path()
             break
@@ -264,6 +269,7 @@ def final_path():
     print("Final story")
     while True:
         answer = input("")
+        clear()
         if answer.strip() == "1":
             print("You are dead.")
             try_again()
