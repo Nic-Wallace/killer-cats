@@ -66,7 +66,6 @@ def intro():
         print("Option #2: Run away from the growling as fast as possible.\n")
         answer = input("Which option will you choose? (1/2): ")
         clear()
-
         if answer.strip() == "1":
             print("You creep towards the growling.")
             print("The thick vegetation prevents you from seeing very far ahead.")
@@ -115,7 +114,7 @@ def stone_passage():
     """
     clear()
     print("This path gets narrower and narrower the farther you go.")
-    print("It is getting quite hard to see. You start using your hands to trace the sides\nof the bushes and prevent branches from hitting you as you walk cautiously, but quickly.")
+    print("It is getting quite hard to see. You start using your hands to trace the sides\nof the bushes and push branches aside as you walk cautiously, but quickly.")
     print("You realise the bushes have gone, as your hands find slick stone at either side,\nand you are now walking through a stone passage way.")
     print('You start to worry, "Am I going the right way? Should I turn back?"')
     print("Panic sets in, your breath becomes fast and shallow.")
@@ -158,7 +157,7 @@ def cavern():
     print("Rummaging through a dirty pile of clothes and bedding, you find a backpack with\na knife, an empty gun, and rope inside.")
     print("These may come in handy if things go south.")
     print("For now, you try to get some sleep here before deciding where to go.\n")
-    print("You wake up to a much brighter cave, and get ready to go.")
+    print("You wake up to a much brighter cave, and get ready to leave.")
     print("You see two more tunnels at the other end of this space,\nmaybe they lead out of here?\n")
     while True:
         answer = input("Which tunnel do you go through? (left/right): ")
@@ -193,9 +192,9 @@ def hillside():
     print("Being more cautious now, you draw your knife, trying to be as quiet as you can.")
     print("Eventually, as the smell gets worse, you start to see some light up ahead.")
     print("You pick up the pace. As you reach the tunnel exit, you see a small pile of fur.")
-    print("It seems to be a cat, long dead, wearing a miniature tactical vest strapped with\nammo and a tiny knife.")
+    print("It seems to be a cat, long dead, wearing a miniature tactical vest strapped with\nammunition and tiny knives.")
     print("You hold your breath and take the ammo, which fits your gun! You load it up and\nkeep a tight grip on it.")
-    print("Scanning the area as you move, you make your way uphill to get a good view on\nthe area.")
+    print("Scanning the area as you move, you make your way uphill to get a good view.")
     print("From the top of the hill, you see a beautiful vally, glowing in the morning sun.")
     print("On a nearby hill, you see a small trail of smoke rising from the trees.")
     print("In the other direction, you see a road leading to a large town.")
@@ -217,7 +216,7 @@ def hillside():
             print("A look of hope, then fear and sadness crosses his face as he sees you,\nthen looks to his left where you see a platoon of cats rushing in.")
             print("They bypass the man and run straight for you.")
             print("You empty your gun and reach for the knife, but it is no use. They are too many.")
-            print("Your last moments are a flurry of fur and tiny claws.")
+            print("Your last moments are a flurry of fur and tiny knives.")
             print("You are dead.")
             try_again()
             break
@@ -231,13 +230,24 @@ def camp():
     Fifth step of the game from going down the correct path.
     """
     clear()
-    print("")
+    print("You scan the hillside below and across from you, you see only birds and trees.")
+    print("You make your way to the bottom of the valley where you find a trickling stream.\nYou get a fresh, cold drink before heading towards the smoke.")
+    print("You start to smell burning sticks, and pick up the pace.\nAs you get closer, you see two people sitting by the fire and talking.")
+    print('"Hey, I don\'t mean to alarm you! I\'ve been lost and I dont know where I am or\nwhat\'s happening, can you help me out maybe?"')
+    print("They startle, jump up and grab their weapons instinctively.\nThey relax when they see that it is only you.")
+    print('"You\'ve missed out on a lot my friend, but we\'re glad to see another survivor.\nWe are actually on our way to a secure settlement right now. care to join us?"')
+    print('"Sure! You can fill me in on the way, I\'ve seen some weird things on my way here."')
+    print("You share some food, then head off in search of the settlement")
+    print("Trekking through the woods, you catch up on what happened to the world.\nThe Great Cat War wiped out a lot of humanity, and almost all dogs.")
+    print("As you walk and talk, you are alarmed by rustling in the bushes to the right of\nyour path. The others draw their weapons and motion to you that you do the same.")
+    print("You can draw your weapons and fight, but you also know where the settlement is.")
     while True:
-        answer = input("")
-        if answer[0].lower().strip() == "":
-            sixth_path()
+        answer = input("Do you run to safety, or do you stay to fight? (run/fight): ")
+        if answer[0].lower().strip() == "r":
+            final_path()
             break
-        elif answer[0].lower().strip() == "":
+        elif answer[0].lower().strip() == "f":
+            print("You stay, drawing your weapons to fight beside your new friends.")
             print("You are dead.")
             try_again()
             break
