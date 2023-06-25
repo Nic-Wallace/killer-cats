@@ -90,9 +90,8 @@ def dirt_path():
     """
     clear()
     print("You dash back, away from the growling and through the forest.")
-    print("Trying to roient yourself, the sun appears to be low in the sky. It seems like\nevening, and the light is fading as you quickly try to find safety.")
-    print("Stumbling through the trees, you run straight onto a small dirt path.")
-    print("It leads left, and right.\n")
+    print("You try to orient yourself, the sun appears to be low in the sky. It seems like\nevening, and the light is fading as you quickly try to find safety.")
+    print("Stumbling through the tall trees and thick vegetation, you run straight onto a\nsmall dirt path. It leads left, and right.\n")
     while True:
         answer = input("Which way do you go? (left/right): ")
         if answer[0].lower().strip() == "l":
@@ -118,6 +117,9 @@ def stone_passage():
     print("This path gets narrower and narrower the farther you go.")
     print("It is getting quite hard to see. You start using your hands to trace the sides\nof the bushes and prevent branches from hitting you as you walk cautiously, but quickly.")
     print("You realise the bushes have gone, as your hands find slick stone at either side,\nand you are now walking through a stone passage way.")
+    print('You start to worry, "Am I going the right way? Should I turn back?"')
+    print("Panic sets in, your breath becomes fast and shallow.")
+    print("You spin around, trying to decide which way to go.")
     while True:
         print("Option #1: You keep moving foreward.")
         print("Option #2: You turn back.\n")
@@ -198,7 +200,7 @@ def hillside():
     print("On a nearby hill, you see a small trail of smoke rising from the trees.")
     print("In the other direction, you see a road leading to a large town.")
     print('"Maybe there are people around, people that can help me!"')
-    print("Despite how hungry and tired you are, you are now filled with hope.")
+    print("Despite how hungry and tired you are, you are now filled with hope.\n")
     while True:
         print("Option #1: You go to the smoke on the hill.")
         print("Option #2: You go down to the road and into the town.\n")
