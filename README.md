@@ -50,8 +50,8 @@ about how to play.
 
     - Below the story, the user will have two choices. These are clearly labelled and the user is told what the expected input is in brackets, this reduces confusion for the user. There are two types of options in the game, numbers or text. (The text option looks only for the first letter the user types, to prevent typos from resulting in invalid data and frustrating the user.)
 
-![screenshot](documentation/feature03.png)
-![screenshot](documentation/feature03.1.png)
+![screenshot](documentation/feature03a.png)
+![screenshot](documentation/feature03b.png)
 
 - **Invalid Input**
 
