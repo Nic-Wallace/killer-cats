@@ -1,6 +1,8 @@
 import os
 import art
 
+HAS_WON = False
+
 
 def clear():
     """
@@ -15,6 +17,7 @@ def try_again():
     Asks the user if they want to try the game again.
     Sends them back to the start or closes the program.
     """
+    global HAS_WON
     while True:
         answer = input("Would you like to try again? (yes/no): ")
         if answer[0].lower().strip() == "y":
@@ -22,7 +25,8 @@ def try_again():
             break
         elif answer[0].lower().strip() == "n":
             clear()
-            print("Oh no, you let the cats win!")
+            if not HAS_WON:
+                  print("Oh no, you let the cats win!")
             print("Thank you for playing Killer Cats.")
             break
         else:
@@ -65,6 +69,8 @@ def intro():
     """
     Story introduction, gives the first question to user.
     """
+    global HAS_WON
+    HAS_WON = False
     clear()
     print("You wake up, surrounded by trees and very confused.")
     print('"How did I get here?"')
@@ -103,9 +109,9 @@ def dirt_path():
     print("You try to orient yourself, the sun appears to be low in the sky. "
           "It seems like\nevening, and the light is fading as you quickly try "
           "to find safety.")
-    print("Stumbling through the tall trees and thick vegetation, you run "
-          "straight onto a\nsmall dirt path. It leads left, and right.\n")
     while True:
+        print("Stumbling through the tall trees and thick vegetation, you run "
+          "straight onto a\nsmall dirt path. It leads left, and right.\n")
         answer = input("Which way do you go? (left/right): ")
         clear()
         if answer[0].lower().strip() == "l":
@@ -141,7 +147,7 @@ def stone_passage():
     print("Panic sets in, your breath becomes fast and shallow.")
     print("You spin around, trying to decide which way to go.")
     while True:
-        print("Option #1: You keep moving foreward.")
+        print("Option #1: You keep moving forward.")
         print("Option #2: You turn back.\n")
         answer = input("Which option will you choose? (1/2): ")
         clear()
@@ -190,9 +196,9 @@ def cavern():
     print("For now, you try to get some sleep here before deciding where to "
           "go.\n")
     print("You wake up to a much brighter cave, and get ready to leave.")
-    print("You see two more tunnels at the other end of this space,\nmaybe "
-          "they lead out of here?\n")
     while True:
+        print("You see two more tunnels at the other end of this space,\nmaybe "
+          "they lead out of here?\n")
         answer = input("Which tunnel do you go through? (left/right): ")
         clear()
         if answer[0].lower().strip() == "l":
@@ -351,6 +357,7 @@ def endgame():
     """
     Final level of the game.
     """
+    global HAS_WON
     clear()
     print("Fearing for your life, you run as fast as you can away from what"
           " you think is \nan ambush.")
@@ -393,6 +400,7 @@ def endgame():
             try_again()
             break
         elif answer.strip() == "2":
+            HAS_WON = True
             print("You aren't so trusting of this stranger, and when they "
                   "aren't looking, you \ngrab your backpack and make a run "
                   "for it.")
@@ -410,7 +418,10 @@ def endgame():
             print("You make your way inside, and let out a deep sigh. You get"
                   " the feeling that \nyou are finally safe.")
             print("Congratulations! Thank you for playing Killer Cats!")
+            input("\nPress ENTER to continue")
+            clear()
             print(art.fireworks)
+            try_again()
             break
         else:
             clear()
