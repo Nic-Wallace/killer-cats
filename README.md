@@ -77,6 +77,35 @@ about how to play.
 - [JavaScript](https://www.javascript.com) used for the mock terminal, provided by Code Institute.
 - [Python](https://www.python.org) used as the back-end programming language.
 
+## Data Model
+
+### Flowchart
+
+To follow best practice, a flowchart was created for the app's logic,
+and mapped out before coding began using a free version of
+[Lucidchart](https://www.lucidchart.com/pages/templates?usecase=erd).
+
+Below is the flowchart of the main process of this Python program. It shows the cycle of the program, shortened as the levels are repetitive.
+
+![screenshot](documentation/flowchart.png)
+
+### Functions
+
+The primary functions used on this application are:
+
+- `welcome()`
+    - Displays title and welcome test. Verifies users humanity before calling intro.
+- `intro()`, `dirt_path()`, `stone_passage()`,`cavern()`, `hillside()`, `camp()`
+    - Levels of the game: They print story text, user inputs answer which either progresses to next level or death scene with option to retry game.
+- `try_again()`
+    - Is called after player death scene, either restarts or terminates program.
+
+### Imports
+
+I've used the following Python package:
+
+- `os`: used for adding a `clear()` function
+
 ## Testing
 
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
