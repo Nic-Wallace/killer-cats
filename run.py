@@ -316,7 +316,7 @@ def camp():
           " the right of\nyour path. The others draw their weapons and motion"
           " to you that you do the same.")
     print("You can draw your weapons and fight, but you also know where the "
-          "settlement is.")
+          "settlement is.\n")
     while True:
         answer = input("Do you run to safety, or do you stay to fight? (run/"
                        "fight): ")
@@ -352,16 +352,66 @@ def endgame():
     Final level of the game.
     """
     clear()
-    print("Final story")
+    print("Fearing for your life, you run as fast as you can away from what"
+          " you think is an ambush.")
+    print("You look back once you have run for a minute, and see the cat army"
+          " circling the bushes where you just were.")
+    print("Guilt fills you, but you're still afraid you'll be spotted, so you"
+          " keep running.")
+    print("You don't stop running until you can see the city they spoke of on"
+          " the horizon. It looks beautiful.")
+    print("Slowing pace, you are becoming delerious as the heat of the days "
+          "sun beats down on you.")
+    print("You never stop walking, and eventually collapse, staring at the "
+          "city on the horizon.")
+    print("You come to, and realise that you are on a cart. A kind looking "
+          "robed stranger is feeding you water.")
+    print('"Well good morning! I hope you\'re feelin ok, nasty scrape you have'
+          ' there"')
+    print("You thank them for saving you, and look to the horizon to try catch"
+          " sight of the city again.")
+    print('"Don\'t worry dear, we\'re almost there, you rest now."')
+    print("You don't feel great, you don't know this person, and you are "
+          "getting a familiar smell...")
+    print("You could stay here, and enter the city with them, or you could "
+          "make some excuse and find your own way.\n")
     while True:
-        answer = input("What will you do?")
+        print("Option #1: You stay with this kind stranger.")
+        print("Option #2: You leave them and go your own way.\n")
+        answer = input("What option will you choose? (1/2): ")
         clear()
         if answer.strip() == "1":
+            print("You stay with this person. But the feeling doesn't leave "
+                  "you that something isn't right")
+            print("They are very elusive when you try to get a good look at "
+                  "them, and the smell, what is that smell?")
+            print("You hear a humming noise. It's... It's coming from them? "
+                  "You grab their hood and throw it back to reveal their "
+                  "face...")
+            print("Your eyes lock onto their small furry features, you realise"
+                  " that this is three cats wearing a trenchcoat!")
+            print("Your last moments are a flurry of fur, and three shotguns.")
             print("You are dead.")
             try_again()
             break
         elif answer.strip() == "2":
-            print("Congratulations! You have won!\n")
+            print("You aren't so trusting of this stranger, and when they "
+                  "aren't looking, you grab your backpack and make a run for "
+                  "it.")
+            print("Luckily there is a lot of trees to run through, you only "
+                  "hear shouting once you reach a river and begin to swim "
+                  "across.")
+            print("You turn back and see... three cats? They start shooting "
+                  "but quickly stop once they realise you have gotten away.")
+            print("Not taking any chances, you run through the forest for a "
+                  "while, and see the settlement from another angle.")
+            print('"They must have been going around it and brought me with '
+                  'them! I\'m much closer than I was before!"')
+            print("Excited, you make your way to the city gates. You are met "
+                  "with... People! Finally!")
+            print("You make your way inside, and let out a deep sigh. You get"
+                  " the feeling that you are finally safe\n")
+            print("Congratulations! Thank you for playing Killer Cats!")
             print(art.fireworks)
             break
         else:
