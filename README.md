@@ -188,3 +188,26 @@ You can fork this repository by using the following steps:
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Nic-Wallace/killer-cats)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your GitHub account.
+
+## Credits
+
+### Content
+
+| Source | Location | Notes |
+| --- | --- | --- |
+| [Stack Overflow](https://stackoverflow.com/questions/2084508/clear-terminal-in-python) | run.py | how to implement cross platform clear function |
+| [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
+| [Real Python](https://realpython.com/python-f-strings/) | title | when to use the different f-strings |
+| [YouTube](https://www.youtube.com/watch?v=DEcFCn2ubSg) | run.py | using `.lower().strip()` to check answers |
+
+### Media
+
+| Source | Location | Type | Notes |
+| --- | --- | --- | --- |
+| [Patorjk](http://patorjk.com/software/taag/#p=display&h=3&v=0&f=Graffiti&t=Killer%20cats) | title | ASCII | use text to ASCII conversion to make title |
+
+### Acknowledgements
+
+- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his support throughout the development of this project.
+- I would like to thank my partner Aaron, for supporting me during my studies.
+- I would like to thank my friends, for staying in online calls to help me stay focused on project work.
