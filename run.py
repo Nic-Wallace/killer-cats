@@ -26,7 +26,7 @@ def try_again():
         elif answer[0].lower().strip() == "n":
             clear()
             if not HAS_WON:
-                  print("Oh no, you let the cats win!")
+                print("Oh no, you let the cats win!")
             print("Thank you for playing Killer Cats.")
             break
         else:
@@ -43,8 +43,9 @@ def welcome():
     clear()
     print(art.title)
     print("\nWelcome to Killer Cats!\n")
-    print("To embark on this journey through the apocalypse will be no easy"
-          " feat.")
+    print(
+      "To embark on this journey through the apocalypse will be no easy feat."
+    )
     print("At each step in your path, you will be faced with a choice.")
     print("This choice could lead to your death, or your salvation. So choose"
           " wisely.")
@@ -110,8 +111,11 @@ def dirt_path():
           "It seems like\nevening, and the light is fading as you quickly try "
           "to find safety.")
     while True:
-        print("Stumbling through the tall trees and thick vegetation, you run "
-          "straight onto a\nsmall dirt path. It leads left, and right.\n")
+        print(
+			"Stumbling through the tall trees and thick vegetation, "
+			"you run straight onto a\nsmall dirt path. "
+			"It leads left, and right.\n"
+		)
         answer = input("Which way do you go? (left/right): ")
         clear()
         if answer[0].lower().strip() == "l":
@@ -197,8 +201,10 @@ def cavern():
           "go.\n")
     print("You wake up to a much brighter cave, and get ready to leave.")
     while True:
-        print("You see two more tunnels at the other end of this space,\nmaybe "
-          "they lead out of here?\n")
+        print(
+			"You see two more tunnels at the other end of this space,"
+			"\nmaybe they lead out of here?\n"
+		)
         answer = input("Which tunnel do you go through? (left/right): ")
         clear()
         if answer[0].lower().strip() == "l":
