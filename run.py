@@ -4,6 +4,7 @@ import title
 def clear():
     """
     Clear function to clean-up the terminal so things don't get messy.
+    From Stack Overflow.
     """
     os.system("cls" if os.name == "nt" else "clear")
 
@@ -249,7 +250,7 @@ def camp():
         answer = input("Do you run to safety, or do you stay to fight? (run/fight): ")
         clear()
         if answer[0].lower().strip() == "r":
-            final_path()
+            endgame()
             break
         elif answer[0].lower().strip() == "f":
             print("You stay, drawing your weapons to fight beside your new friends.")
@@ -268,7 +269,7 @@ def camp():
             print(f"{answer} Is not valid, please choose again.\n")
 
 
-def final_path():
+def endgame():
     """
     Final step of the game.
     """
