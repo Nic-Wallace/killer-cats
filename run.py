@@ -1,3 +1,4 @@
+""" imports """
 import os
 import art
 
@@ -112,10 +113,10 @@ def dirt_path():
           "to find safety.")
     while True:
         print(
-			"Stumbling through the tall trees and thick vegetation, "
-			"you run straight onto a\nsmall dirt path. "
-			"It leads left, and right.\n"
-		)
+            "Stumbling through the tall trees and thick vegetation, "
+            "you run straight onto a\nsmall dirt path. "
+            "It leads left, and right.\n"
+        )
         answer = input("Which way do you go? (left/right): ")
         clear()
         if answer[0].lower().strip() == "l":
@@ -202,9 +203,9 @@ def cavern():
     print("You wake up to a much brighter cave, and get ready to leave.")
     while True:
         print(
-			"You see two more tunnels at the other end of this space,"
-			"\nmaybe they lead out of here?\n"
-		)
+            "You see two more tunnels at the other end of this space,"
+            "\nmaybe they lead out of here?\n"
+        )
         answer = input("Which tunnel do you go through? (left/right): ")
         clear()
         if answer[0].lower().strip() == "l":
