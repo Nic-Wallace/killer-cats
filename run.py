@@ -30,7 +30,8 @@ def try_again():
 
 def welcome():
     """
-    First thing displayed when the program is run.
+    Called when program is run.
+    This is the title page where the game is started by verifying users humanity.
     """
     clear()
     print(title.title)
@@ -54,7 +55,7 @@ def welcome():
 
 def intro():
     """
-    Called to start the game, gives the first question.
+    Story introduction, gives the first question to user.
     """
     clear()
     print("You wake up, surrounded by trees and very confused.")
@@ -86,7 +87,7 @@ def intro():
 
 def dirt_path():
     """
-    First step of the game from going down the correct path.
+    Second level of the game from going down the correct path.
     """
     clear()
     print("You dash back, away from the growling and through the forest.")
@@ -112,7 +113,7 @@ def dirt_path():
 
 def stone_passage():
     """
-    Second step of the game from going down the correct path.
+    Third level of the game from going down the correct path.
     """
     clear()
     print("This path gets narrower and narrower the farther you go.")
@@ -149,7 +150,7 @@ def stone_passage():
 
 def cavern():
     """
-    Third step of the game from going down the correct path.
+    Fourth level of the game from going down the correct path.
     """
     clear()
     print("You make your way deeper into the tunnel, tripping on stones in utter darkness.")
@@ -189,7 +190,7 @@ def cavern():
 
 def hillside():
     """
-    Fourth step of the game from going down the correct path.
+    Fifth level of the game from going down the correct path.
     """
     clear()
     print("You head into the tunnel, and after walking some distance in the darkness,\nyou start to get a very bad smell.")
@@ -232,7 +233,7 @@ def hillside():
 
 def camp():
     """
-    Fifth step of the game from going down the correct path.
+    Sixth level of the game from going down the correct path.
     """
     clear()
     print("You scan the hillside below and across from you, you see only birds and trees.")
@@ -271,7 +272,7 @@ def camp():
 
 def endgame():
     """
-    Final step of the game.
+    Final level of the game.
     """
     clear()
     print("Final story")
@@ -291,6 +292,8 @@ def endgame():
 
 
 if __name__ == "__main__":
+    """
+    Clears screen and calls welcome to start the game.
+    """
     clear()
     welcome()
-
