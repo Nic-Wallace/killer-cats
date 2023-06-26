@@ -373,8 +373,6 @@ def endgame():
     print('"Don\'t worry dear, we\'re almost there, you rest now."')
     print("You don't feel great, you don't know this person, and you are "
           "getting \na familiar smell...")
-    print("You could stay here, and enter the city with them, or you could "
-          "make \nsome excuse and find your own way.\n")
     while True:
         print("Option #1: You stay with this kind stranger.")
         print("Option #2: You leave them and go your own way.\n")
