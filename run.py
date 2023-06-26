@@ -1,5 +1,5 @@
 import os
-import title
+import art
 
 
 def clear():
@@ -37,7 +37,7 @@ def welcome():
     humanity.
     """
     clear()
-    print(title.title)
+    print(art.title)
     print("\nWelcome to Killer Cats!\n")
     print("To embark on this journey through the apocalypse will be no easy"
           " feat.")
@@ -354,14 +354,15 @@ def endgame():
     clear()
     print("Final story")
     while True:
-        answer = input("")
+        answer = input("What will you do?")
         clear()
         if answer.strip() == "1":
             print("You are dead.")
             try_again()
             break
         elif answer.strip() == "2":
-            print("You have won!")
+            print("Congratulations! You have won!\n")
+            print(art.fireworks)
             break
         else:
             clear()
