@@ -36,3 +36,27 @@ Defensive programming was manually tested with the below user acceptance testing
 | As a new site user, I would like to have the option to retry the game when I fail, so that I can finish the game without having to run the program again. | ![screenshot](documentation/feature05.png) |
 | As a returning site user, I would like to recognise the game, so that I can remember how the game goes. | ![screenshot](documentation/feature00.png) |
 | As a returning site user, I would like to see the input options, so that I can make informed in-game decisions. | ![screenshot](documentation/feature03.1.png) |
+
+## Bugs
+
+- Python: Verification prompt appearing after someone answers "no" to try_again
+
+    ![screenshot](documentation/bug01.png)
+
+    - To fix this, I inserted "break" after the successful intro call.
+
+- Python `E501 line too long ` (81 > 79 characters)
+
+    ![screenshot](documentation/bug02.png)
+
+    - To fix this, I moved the last word onto the next line.
+
+- Python `E128 continuation line under-indented for visual indent`
+
+    ![screenshot](documentation/bug03.png)
+
+    - To fix this, I corrected the indentation.
+
+## Unfixed Bugs
+
+There are no remaining unfixed bugs that I am aware of.
