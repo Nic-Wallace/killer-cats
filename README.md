@@ -207,6 +207,7 @@ You can fork this repository by using the following steps:
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
 | [Patorjk](http://patorjk.com/software/taag/#p=display&h=3&v=0&f=Graffiti&t=Killer%20cats) | title | ASCII | use text to ASCII conversion to make title |
+| [Joan Stark](https://www.asciiart.eu/holiday-and-events/fireworks) | endgame | ASCII | fireworks art |
 
 ### Acknowledgements
 
