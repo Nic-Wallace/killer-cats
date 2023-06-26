@@ -410,7 +410,7 @@ def endgame():
             print("Excited, you make your way to the city gates. You are met "
                   "with... \nPeople! Finally!")
             print("You make your way inside, and let out a deep sigh. You get"
-                  " the feeling that \nyou are finally safe\n")
+                  " the feeling that \nyou are finally safe.")
             print("Congratulations! Thank you for playing Killer Cats!")
             print(art.fireworks)
             break
