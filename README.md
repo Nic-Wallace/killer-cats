@@ -31,6 +31,12 @@ about how to play.
 - **Welcome Screen**
 
     - When the program runs, the welcome screen will be displayed. This will give the user some information on how to play the game, along with title art that fits the game. This lets the user know how to operate the game, and recognise the site if they are returning.
+    
+![screenshot](documentation/feature00.png)
+
+- **Verification**
+
+    - At the end of the welcome screen, the user is prompted to verify their humanity. This is a fun feature, reinforcing the game narrative of "killer cats".
 
 ![screenshot](documentation/feature01.png)
 
