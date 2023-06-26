@@ -39,11 +39,11 @@ Defensive programming was manually tested with the below user acceptance testing
 
 ## Bugs
 
-- Python: Verification prompt appearing after someone answers "no" to try_again
+- Python: Verification prompt appearing after someone answers "no" to `try_again()`
 
     ![screenshot](documentation/bug01.png)
 
-    - To fix this, I inserted "break" after the successful intro call.
+    - To fix this, I inserted `break` after the successful intro call.
 
 - Python `E501 line too long ` (81 > 79 characters)
 
