@@ -30,7 +30,7 @@ about how to play.
 
 - **Welcome Screen**
 
-    - When the program runs, the welcome screen will be displayed. This will give the user some information on how to play the game, along with some art that fits the game. This lets the user know how to operate the game, and recognise the site if they are returning.
+    - When the program runs, the welcome screen will be displayed. This will give the user some information on how to play the game, along with title art that fits the game. This lets the user know how to operate the game, and recognise the site if they are returning.
 
 ![screenshot](documentation/feature01.png)
 
@@ -65,6 +65,8 @@ about how to play.
     - Enable the user to add a name for their character which will be used throughout the game.
 - Level Art
     - Include unique art at the top of the screen for each level.
+- Go Back
+    - Add a third option in each level that allows the user to return to the previous level.
 
 ## Tools & Technologies Used
 
@@ -75,7 +77,7 @@ about how to play.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the mock terminal, provided by Code Institute.
 - [JavaScript](https://www.javascript.com) used for the mock terminal, provided by Code Institute.
-- [Python](https://www.python.org) used as the back-end programming language.
+- [Python](https://www.python.org) used as the back-end programming language to create the game in terminal.
 
 ## Data Model
 
