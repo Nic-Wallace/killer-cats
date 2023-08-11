@@ -1,6 +1,7 @@
 """ imports """
 import os
 import art
+from simple_term_menu import TerminalMenu
 
 HAS_WON = False
 
