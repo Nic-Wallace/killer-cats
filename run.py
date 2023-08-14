@@ -54,18 +54,24 @@ def welcome():
     print("Be warned: This world is run by intelligent cats equipped with "
           "opposable thumbs\nand ammunition. Keep your wits about you survivor"
           ", and don't let the cats win.\n")
-    while True:
-        human_verification = input("Verify your humanity by typing 'human' "
-                                   "here, no cats allowed!: ")
-        if human_verification[0].lower().strip() == "h":
-            intro()
-            break
-        elif human_verification[0].lower().strip() == "c":
-            clear()
-            print("NO CATS ALLOWED!\n")
-        else:
-            clear()
-            print(f"{human_verification} Is not valid, please choose again.\n")
+    while True:          
+        def options():
+            options = ["entry 1", "entry 2", "entry 3"]
+            terminal_menu = TerminalMenu(options)
+            menu_entry_index = terminal_menu.show()
+            print(f"You have selected {options[menu_entry_index]}!")
+        options()
+      #   human_verification = input("Verify your humanity by typing 'human' "
+      #                              "here, no cats allowed!: ")
+      #   if human_verification[0].lower().strip() == "h":
+      #       intro()
+      #       break
+      #   elif human_verification[0].lower().strip() == "c":
+      #       clear()
+      #       print("NO CATS ALLOWED!\n")
+      #   else:
+      #       clear()
+      #       print(f"{human_verification} Is not valid, please choose again.\n")
 
 
 def intro():
