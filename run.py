@@ -56,10 +56,19 @@ def welcome():
           ", and don't let the cats win.\n")
     while True:          
         def options():
-            options = ["entry 1", "entry 2", "entry 3"]
+            options = ["Human", "Cat"]
             terminal_menu = TerminalMenu(options)
             menu_entry_index = terminal_menu.show()
-            print(f"You have selected {options[menu_entry_index]}!")
+            for option in options:
+                if option == "Human":
+                    intro()
+                    break
+                elif option == "Cat":
+                    clear()
+                    print("NO CATS ALLOWED!\n")
+                else:
+                    clear()
+                    print("not valid")
         options()
       #   human_verification = input("Verify your humanity by typing 'human' "
       #                              "here, no cats allowed!: ")
