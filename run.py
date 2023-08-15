@@ -59,14 +59,11 @@ def welcome():
             options = ["Human", "Cat"]
             terminal_menu = TerminalMenu(options)
             menu_entry_index = terminal_menu.show()
-            for option in options:
-                if option == "Human":
-                    intro()
-                    break
-                else:
-                    clear()
-                    print("NO CATS ALLOWED!\n")
-                    break
+            if option == "Human":
+                intro()
+            else:
+                clear()
+                print("NO CATS ALLOWED!\n")
         options()
       #   human_verification = input("Verify your humanity by typing 'human' "
       #                              "here, no cats allowed!: ")
