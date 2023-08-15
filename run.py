@@ -63,12 +63,10 @@ def welcome():
                 if option == "Human":
                     intro()
                     break
-                elif option == "Cat":
-                    clear()
-                    print("NO CATS ALLOWED!\n")
                 else:
                     clear()
-                    print("not valid")
+                    print("NO CATS ALLOWED!\n")
+                    break
         options()
       #   human_verification = input("Verify your humanity by typing 'human' "
       #                              "here, no cats allowed!: ")
