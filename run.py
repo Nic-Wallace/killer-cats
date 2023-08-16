@@ -57,7 +57,7 @@ def welcome():
     while True:          
         def options():
             options = ["Human", "Cat"]
-            terminal_menu = TerminalMenu(options)
+            terminal_menu = TerminalMenu(options, title = "To begin, verify your humanity by selecting your species, no cats allowed!:")
             menu_entry_index = terminal_menu.show()
             option = options[menu_entry_index]
             if option == "Human":
