@@ -59,6 +59,7 @@ def welcome():
             options = ["Human", "Cat"]
             terminal_menu = TerminalMenu(options)
             menu_entry_index = terminal_menu.show()
+            option = options[menu_entry_index]
             if option == "Human":
                 intro()
             else:
