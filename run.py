@@ -57,7 +57,7 @@ def welcome():
     while True:
         def options():
             options = ["Human", "Cat"]
-            terminal_menu = TerminalMenu(options, title = "To begin, use the "
+            terminal_menu = TerminalMenu(options, title = "-To begin, use the "
             "arrow keys and enter key to verify your humanity by \nselecting "
             "your species, no cats allowed!:")
             menu_entry_index = terminal_menu.show()
@@ -98,7 +98,7 @@ def intro():
         def options():
             options = ["Creep towards the growling to investigate.", 
             "Run away from the growling as fast as possible."]
-            terminal_menu = TerminalMenu(options, title = "What do you do?")
+            terminal_menu = TerminalMenu(options, title = "-What do you do?")
             menu_entry_index = terminal_menu.show()
             option = options[menu_entry_index]
             if option == "Creep towards the growling to investigate.":
@@ -143,20 +143,26 @@ def dirt_path():
     print("You dash back, away from the growling and through the forest.")
     print("You try to orient yourself, the sun appears to be low in the sky. "
           "It seems like\nevening, and the light is fading as you quickly try "
-          "to find safety.")
+          "to find safety.\n")
     while True:
         def options():
-            options = ["Human", "Cat"]
-            terminal_menu = TerminalMenu(options, title = "To begin, use the "
-            "arrow keys and enter key to verify your humanity by \nselecting "
-            "your species, no cats allowed!:")
+            options = ["Left", "Right"]
+            terminal_menu = TerminalMenu(options, title = "Stumbling through "
+            "the tall trees and thick vegetation, you run straight onto a \n"
+            "small dirt path. It leads left, and right.\n-Which way do "
+            "you go?")
             menu_entry_index = terminal_menu.show()
             option = options[menu_entry_index]
-            if option == "Human":
-                intro()
+            if option == "Left":
+                print("This path is dimly lit, you hear rustling in the bushes"
+                "...")
+                print("The gurilla warfare faction of cats leap from the "
+                "bushes and attack.\n")
+                print("Your last moments are a flurry of fur and bullets.")
+                print("You are dead.")
+                try_again()
             else:
-                clear()
-                print("NO CATS ALLOWED!\n")
+                stone_passage()
         options()
       #   print(
       #       "Stumbling through the tall trees and thick vegetation, "
