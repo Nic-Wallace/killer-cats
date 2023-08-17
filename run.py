@@ -83,7 +83,8 @@ def welcome():
 
 def intro():
     """
-    Story introduction, gives the first question to user.
+    Story introduction, gives the first question to user, is the first level 
+    of the game.
     """
     global HAS_WON
     HAS_WON = False
@@ -95,17 +96,22 @@ def intro():
     print("But you can't quite remember what happened.\n")
     while True:
         def options():
-            options = ["Human", "Cat"]
-            terminal_menu = TerminalMenu(options, title = "To begin, use the "
-            "arrow keys and enter key to verify your humanity by \nselecting "
-            "your species, no cats allowed!:")
+            options = ["Creep towards the growling to investigate.", 
+            "Run away from the growling as fast as possible."]
+            terminal_menu = TerminalMenu(options, title = "What do you do?")
             menu_entry_index = terminal_menu.show()
             option = options[menu_entry_index]
-            if option == "Human":
-                intro()
+            if option == "Creep towards the growling to investigate.":
+                print("You creep towards the growling.")
+                print("The thick vegetation prevents you from seeing very far "
+                "ahead.")
+                print("But you continue on,")
+                print("...straight into an army of cats...\n")
+                print("Your last moments are a flurry of fur and hissing.")
+                print("You have failed.")
+                try_again()
             else:
-                clear()
-                print("NO CATS ALLOWED!\n")
+                dirt_path()
         options()
       #   print("Option #1: Creep towards the growling to investigate.")
       #   print("Option #2: Run away from the growling as fast as possible.\n")
