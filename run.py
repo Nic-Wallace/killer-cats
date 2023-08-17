@@ -202,20 +202,33 @@ def stone_passage():
     print('You start to worry, "Am I going the right way? Should I turn '
           'back?"')
     print("Panic sets in, your breath becomes fast and shallow.")
-    print("You spin around, trying to decide which way to go.")
+    print("You spin around, trying to decide which way to go.\n")
     while True:
         def options():
-            options = ["Human", "Cat"]
-            terminal_menu = TerminalMenu(options, title = "To begin, use the "
-            "arrow keys and enter key to verify your humanity by \nselecting "
-            "your species, no cats allowed!:")
+            options = ["I keep moving forward.", "I turn back."]
+            terminal_menu = TerminalMenu(options, title = "-What do you do?")
             menu_entry_index = terminal_menu.show()
             option = options[menu_entry_index]
-            if option == "Human":
-                intro()
+            if option == "I keep moving forward.":
+                cavern()
             else:
-                clear()
-                print("NO CATS ALLOWED!\n")
+                print("Turning around at this point is no easy feat, but you "
+                "do it anyway.")
+                print("You had a feeling something big and scary was waiting "
+                "for you,")
+                print("...and you're scared of the dark.")
+                print("After a long time, you start to see light at the end of"
+                " the tunnel")
+                print("Your eyes take a while to adjust to the brightness,")
+                print("But at this relieving sight you sprint towards it "
+                "blindly")
+                print("The first thing you see is a trail of dust, rising up "
+                "into the air.")
+                print("Tracing it's source down to the ground, your eyes fall"
+                " on a group of\nangry cats, armed to the teeth.\n")
+                print("Your last moments are a flurry of fur and dust.")
+                print("You are dead.")
+                try_again()
         options()
       #   print("Option #1: You keep moving forward.")
       #   print("Option #2: You turn back.\n")
