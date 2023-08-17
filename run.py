@@ -281,17 +281,36 @@ def cavern():
     print("You wake up to a much brighter cave, and get ready to leave.")
     while True:
         def options():
-            options = ["Human", "Cat"]
-            terminal_menu = TerminalMenu(options, title = "To begin, use the "
-            "arrow keys and enter key to verify your humanity by \nselecting "
-            "your species, no cats allowed!:")
+            options = ["Left", "Right"]
+            terminal_menu = TerminalMenu(options, title = "You see two more "
+            "tunnels at the other end of this space,\n maybe they lead out of "
+            "here?\n-Which tunnel do you go into?")
             menu_entry_index = terminal_menu.show()
             option = options[menu_entry_index]
-            if option == "Human":
-                intro()
+            if option == "Left":
+                print("You make your way over to the left tunnel.")
+                print("The light slowly disappears as you move forawrds, then"
+                " it begins to come back,\nfrom a different source...")
+                print("It looks like you are approaching a hole in the ground"
+                " of this tunnel,\nand there is light spilling out of it.")
+                print("Once you reach it, you peer down, and wait for your "
+                "eyes to adjust.")
+                print("You see what looks like another cave, but this one is"
+                " filled with light,\nand must be the way out!")
+                print("You look for something to secure your rope to,\nand "
+                "find a column of stone that will work.")
+                print("You abseil down into this cave with ease and delight. "
+                "Outside you see lush trees\nand hills as you untie your "
+                "rope.")
+                print("You look around the cave, and upon looking a little "
+                "deeper,\nyou see a grizzly bear.")
+                print("It starts to rise... and drool.\n")
+                print("Your last moments are a flurry of fur and very, very,"
+                " big teeth.")
+                print("You are dead.")
+                try_again()
             else:
-                clear()
-                print("NO CATS ALLOWED!\n")
+                hillside()
         options()
       #   print(
       #       "You see two more tunnels at the other end of this space,"
