@@ -378,17 +378,34 @@ def hillside():
           "hope.\n")
     while True:
         def options():
-            options = ["Human", "Cat"]
-            terminal_menu = TerminalMenu(options, title = "To begin, use the "
-            "arrow keys and enter key to verify your humanity by \nselecting "
-            "your species, no cats allowed!:")
+            options = ["You go to the smoke on the hill.", "You go down "
+            "to the road and into the town."]
+            terminal_menu = TerminalMenu(options, title = "-Where do you "
+            "decide to go?")
             menu_entry_index = terminal_menu.show()
             option = options[menu_entry_index]
-            if option == "Human":
-                intro()
+            if option == "You go to the smoke on the hill.":
+                camp()
             else:
-                clear()
-                print("NO CATS ALLOWED!\n")
+                print("You head down the hill and get to the road after "
+                    "checking the coast is clear.")
+                print("Excited to possibly find people, you jog towards the "
+                    "fortified town.")
+                print("The barricades on the road make the only entry option "
+                    "a narrow path in and out.")
+                print("Creeping aound the corner of the gates, you clutch the"
+                    " gun, ready to fire.")
+                print("You see a young man jump from resting at his post, an "
+                    "AK strapped to his chest.")
+                print("A look of hope, then fear and sadness crosses his face"
+                    " as he sees you,\nthen looks to his left where you see a "
+                    "platoon of cats rushing in.")
+                print("They bypass the man and run straight for you.")
+                print("You empty your gun and reach for the knife, but it is "
+                    "no use. They are too many.\n")
+                print("Your last moments are a flurry of fur and tiny knives.")
+                print("You are dead.")
+                try_again()
         options()
       #   print("Option #1: You go to the smoke on the hill.")
       #   print("Option #2: You go down to the road and into the town.\n")
