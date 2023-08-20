@@ -21,19 +21,32 @@ def try_again():
     """
     global HAS_WON
     while True:
-        answer = input("Would you like to try again? (yes/no): ")
-        if answer[0].lower().strip() == "y":
-            intro()
-            break
-        elif answer[0].lower().strip() == "n":
-            clear()
-            if not HAS_WON:
-                print("Oh no, you let the cats win!")
-            print("Thank you for playing Killer Cats.")
-            break
-        else:
-            clear()
-            print(f"{answer} Is not valid, please choose again.\n")
+        def options():
+            options = ["Yes", "No"]
+            terminal_menu = TerminalMenu(options, title = "-Would you like to try again?")
+            menu_entry_index = terminal_menu.show()
+            option = options[menu_entry_index]
+            if option == "Yes":
+                intro()
+            else:
+                clear()
+                if not HAS_WON:
+                    print("Oh no, you let the cats win!")
+                    print("Thank you for playing Killer Cats.\n")
+        options()
+        # answer = input("Would you like to try again? (yes/no): ")
+        # if answer[0].lower().strip() == "y":
+        #     intro()
+        #     break
+        # elif answer[0].lower().strip() == "n":
+        #     clear()
+        #     if not HAS_WON:
+        #         print("Oh no, you let the cats win!")
+        #     print("Thank you for playing Killer Cats.")
+        #     break
+        # else:
+        #     clear()
+        #     print(f"{answer} Is not valid, please choose again.\n")
 
 
 def welcome():
