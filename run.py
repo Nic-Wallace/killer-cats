@@ -283,7 +283,7 @@ def cavern():
         def options():
             options = ["Left", "Right"]
             terminal_menu = TerminalMenu(options, title = "You see two more "
-            "tunnels at the other end of this space,\n maybe they lead out of "
+            "tunnels at the other end of this space,\nmaybe they lead out of "
             "here?\n-Which tunnel do you go into?")
             menu_entry_index = terminal_menu.show()
             option = options[menu_entry_index]
@@ -553,7 +553,7 @@ def endgame():
           " \nsight of the city again.")
     print('"Don\'t worry dear, we\'re almost there, you rest now."')
     print("You don't feel great, you don't know this person, and you are "
-          "getting \na familiar smell...")
+          "getting \na familiar smell...\n")
     while True:
         def options():
             options = ["Stay with this kind stranger", "Leave them and go your"
