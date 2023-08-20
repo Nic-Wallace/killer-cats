@@ -472,17 +472,31 @@ def camp():
           "settlement is.\n")
     while True:
         def options():
-            options = ["Human", "Cat"]
-            terminal_menu = TerminalMenu(options, title = "To begin, use the "
-            "arrow keys and enter key to verify your humanity by \nselecting "
-            "your species, no cats allowed!:")
+            options = ["Run", "Fight"]
+            terminal_menu = TerminalMenu(options, title = "-Do you run to "
+                    "safety, or do you fight?")
             menu_entry_index = terminal_menu.show()
             option = options[menu_entry_index]
-            if option == "Human":
-                intro()
+            if option == "Run":
+                endgame()
             else:
-                clear()
-                print("NO CATS ALLOWED!\n")
+                print("You stay, drawing your weapons to fight beside your "
+                    "new friends.")
+                print("The rustling in the bushes spreads around you in a "
+                    "circle, you're now trapped.")
+                print("Panic sets in, you feel the sweat gather on your "
+                    "forehead.")
+                print("Your companions look terrified but they are holding "
+                    "position.")
+                print("Slowly, you see cats start to come out from the bushes"
+                    ", snarling at you all.")
+                print("Your friends leap at them and attack, you follow suit.")
+                print("You take out a few of them in the fight, but you know "
+                    "defeat is near.\n")
+                print("You fight well, but in the end your last moments are a "
+                    "flurry of fur and snarls.")
+                print("You are dead.")
+                try_again()
         options()
       #   answer = input("Do you run to safety, or do you stay to fight? (run/"
       #                  "fight): ")
