@@ -556,17 +556,50 @@ def endgame():
           "getting \na familiar smell...")
     while True:
         def options():
-            options = ["Human", "Cat"]
-            terminal_menu = TerminalMenu(options, title = "To begin, use the "
-            "arrow keys and enter key to verify your humanity by \nselecting "
-            "your species, no cats allowed!:")
+            options = ["Stay with this kind stranger", "Leave them and go your"
+            " own way"]
+            terminal_menu = TerminalMenu(options, title = "-What do you want "
+            "to do?")
             menu_entry_index = terminal_menu.show()
             option = options[menu_entry_index]
-            if option == "Human":
-                intro()
+            if option == "Stay with this kind stranger":
+                print("You stay with this person. But the feeling doesn't "
+                    "leave you that \nsomething isn't right")
+                print("They are very elusive when you try to get a good look "
+                    "at them, \nand the smell, what is that smell?")
+                print("You hear a humming noise. It's... It's coming from "
+                    "them? You grab their hood \nand throw it back to reveal "
+                    "their face...")
+                print("Your eyes lock onto their small furry features, you "
+                    "realise that this is \nthree cats wearing a trenchcoat"
+                    "!\n")
+                print("Your last moments are a flurry of fur, and three "
+                    "shotguns.")
+                print("You are dead.")
+                try_again()
             else:
+                print("You aren't so trusting of this stranger, and when they "
+                    "aren't looking, you \ngrab your backpack and make a run "
+                    "for it.")
+                print("Luckily there is a lot of trees to run through, you "
+                    "only hear shouting once \nyou reach a river and begin to"
+                    " swim across.")
+                print("You turn back and see... three cats? They start "
+                    "shooting but quickly stop once \nthey realise you have "
+                    "gotten away.")
+                print("Not taking any chances, you run through the forest for"
+                    " a while, \nand see the settlement from another angle.")
+                print('"They must have been going around it and brought me'
+                    ' with them! I\'m much \ncloser than I was before!"')
+                print("Excited, you make your way to the city gates. You are "
+                    "met with... \nPeople! Finally!")
+                print("You make your way inside, and let out a deep sigh. You"
+                    " get the feeling that \nyou are finally safe.")
+                print("Congratulations! Thank you for playing Killer Cats!")
+                input("\nPress ENTER to continue")
                 clear()
-                print("NO CATS ALLOWED!\n")
+                print(art.fireworks)
+                try_again()
         options()
       #   print("Option #1: You stay with this kind stranger.")
       #   print("Option #2: You leave them and go your own way.\n")
