@@ -49,6 +49,29 @@ def try_again():
         #     print(f"{answer} Is not valid, please choose again.\n")
 
 
+def go_back():
+    options = ["Back"]
+    terminal_menu = TerminalMenu(options)
+    menu_entry_index = terminal_menu.show()
+    option = options[menu_entry_index]
+    if option == "Back":
+        intro()
+
+
+def cat_human_options():
+    options = ["Human", "Cat"]
+    terminal_menu = TerminalMenu(options, title = "-To begin, use the "
+    "arrow keys and enter key to verify your humanity by \nselecting "
+    "your species, no cats allowed!:")
+    menu_entry_index = terminal_menu.show()
+    option = options[menu_entry_index]
+    if option == "Human":
+        intro()
+    else:
+        clear()
+        print("NO CATS ALLOWED!\n")
+
+
 def welcome():
     """
     Called when program is run.
@@ -68,19 +91,7 @@ def welcome():
           "opposable thumbs\nand ammunition. Keep your wits about you survivor"
           ", and don't let the cats win.\n")
     while True:
-        def options():
-            options = ["Human", "Cat"]
-            terminal_menu = TerminalMenu(options, title = "-To begin, use the "
-            "arrow keys and enter key to verify your humanity by \nselecting "
-            "your species, no cats allowed!:")
-            menu_entry_index = terminal_menu.show()
-            option = options[menu_entry_index]
-            if option == "Human":
-                intro()
-            else:
-                clear()
-                print("NO CATS ALLOWED!\n")
-        options()
+        cat_human_options()
       #   human_verification = input("Verify your humanity by typing 'human' "
       #                              "here, no cats allowed!: ")
       #   if human_verification[0].lower().strip() == "h":
