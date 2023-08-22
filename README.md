@@ -36,7 +36,7 @@ about how to play.
 
 - **Verification**
 
-    - At the end of the welcome screen, the user is prompted to verify their humanity. This is a fun feature, reinforcing the game narrative of "killer cats".
+    - At the end of the welcome screen, if the user selects `game`, they are prompted to verify their humanity. This is a fun feature, reinforcing the game narrative of "killer cats".
 
 ![screenshot](documentation/feature01.png)
 
@@ -48,20 +48,13 @@ about how to play.
 
 - **Path Options**
 
-    - Below the story, the user will have two choices. These are clearly labelled and the user is told what the expected input is in brackets, this reduces confusion for the user. There are two types of options in the game, numbers or text. (The text option looks only for the first letter the user types, to prevent typos from resulting in invalid data and frustrating the user.)
+    - Below the story, the user will have two choices. These are clearly labelled and the user can only use arrows and enter to make their selection, this reduces confusion for the user.
 
-![screenshot](documentation/feature03a.png)
-![screenshot](documentation/feature03b.png)
-
-- **Invalid Input**
-
-    - In the event the users input is invalid, they will be brought to a new screen where they are informed of the error, and prompted to input the correct information with a reminder of what the options are. This is useful to the user as it will help them get back on track with the game easily.
-
-![screenshot](documentation/feature04.png)
+![screenshot](documentation/feature03.png)
 
 - **Try Again**
 
-    - This feature will pop up once the user sees a death story screen. They will have chosen the incorrect path which has led them to their untimely death, and in this scenario the user will be able to try the game again. This is beneficial to the user as it will make it easy for them to restart the game.
+    - This feature will pop up once the user sees a death story screen. They will have chosen the incorrect path which has led them to their untimely death, and in this scenario the user will be able to try the game again. This is beneficial to the user as it will make it easy for them to restart the game without having to return to the welcome page every time.
 
 ![screenshot](documentation/feature05.png)
 
