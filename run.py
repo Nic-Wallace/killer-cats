@@ -108,8 +108,11 @@ def welcome():
     print(art.title)
     print("\nWelcome to Killer Cats!\n")
     print(
-      "To embark on this journey through the apocalypse will be no easy feat."
+      "To embark on this journey through the apocalypse will be no easy "
+      "feat.\n"
     )
+    print("-To begin, use the arrow keys and enter key to make your choice "
+    "selection")
     main_menu()
       #   human_verification = input("Verify your humanity by typing 'human' "
       #                              "here, no cats allowed!: ")
