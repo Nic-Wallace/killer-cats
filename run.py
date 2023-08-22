@@ -14,6 +14,21 @@ def clear():
     os.system("cls" if os.name == "nt" else "clear")
 
 
+def play_again():
+    options = ["Yes", "No"]
+    terminal_menu = TerminalMenu(options, title = "-Would you like to try again?")
+    menu_entry_index = terminal_menu.show()
+    option = options[menu_entry_index]
+    if option == "Yes":
+        intro()
+    else:
+        clear()
+        if not HAS_WON:
+            print("Oh no, you let the cats win!")
+            print("Thank you for playing Killer Cats.\n")
+        main_menu()
+
+
 def try_again():
     """
     Asks the user if they want to try the game again.
@@ -21,19 +36,7 @@ def try_again():
     """
     global HAS_WON
     while True:
-        def options():
-            options = ["Yes", "No"]
-            terminal_menu = TerminalMenu(options, title = "-Would you like to try again?")
-            menu_entry_index = terminal_menu.show()
-            option = options[menu_entry_index]
-            if option == "Yes":
-                intro()
-            else:
-                clear()
-                if not HAS_WON:
-                    print("Oh no, you let the cats win!")
-                    print("Thank you for playing Killer Cats.\n")
-        options()
+        play_again()
         # answer = input("Would you like to try again? (yes/no): ")
         # if answer[0].lower().strip() == "y":
         #     intro()
@@ -82,7 +85,7 @@ def main_menu():
         cat_human_options()
     else:
         clear()
-        print("NO CATS ALLOWED!\n")
+        rules()
 
 
 def welcome():
@@ -97,14 +100,7 @@ def welcome():
     print(
       "To embark on this journey through the apocalypse will be no easy feat."
     )
-    print("At each step in your path, you will be faced with a choice.")
-    print("This choice could lead to your death, or your salvation. So choose"
-          " wisely.")
-    print("Be warned: This world is run by intelligent cats equipped with "
-          "opposable thumbs\nand ammunition. Keep your wits about you survivor"
-          ", and don't let the cats win.\n")
-    while True:
-        cat_human_options()
+    main_menu()
       #   human_verification = input("Verify your humanity by typing 'human' "
       #                              "here, no cats allowed!: ")
       #   if human_verification[0].lower().strip() == "h":
