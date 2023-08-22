@@ -55,7 +55,7 @@ def go_back():
     menu_entry_index = terminal_menu.show()
     option = options[menu_entry_index]
     if option == "Back":
-        intro()
+        main_menu()
 
 
 def cat_human_options():
@@ -67,6 +67,19 @@ def cat_human_options():
     option = options[menu_entry_index]
     if option == "Human":
         intro()
+    else:
+        clear()
+        print("NO CATS ALLOWED!\n")
+        go_back()
+
+
+def main_menu():
+    options = ["Rules", "Game"]
+    terminal_menu = TerminalMenu(options)
+    menu_entry_index = terminal_menu.show()
+    option = options[menu_entry_index]
+    if option == "Game":
+        cat_human_options()
     else:
         clear()
         print("NO CATS ALLOWED!\n")
