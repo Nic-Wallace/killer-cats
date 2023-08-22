@@ -20,11 +20,11 @@ Defensive programming was manually tested with the below user acceptance testing
 | Feature | User Action | Expected Result | Pass/Fail | Screenshot |
 | --- | --- | --- | --- | --- |
 | Verification | | | | |
-| | Enter 'human' where prompted | User will be brought to intro screen on valid entry | Pass | ![screenshot](documentation/feature01.png) |
+| | Select 'Human' where prompted | User will be brought to intro screen on valid entry | Pass | ![screenshot](documentation/feature01.png) |
 | Path Options | | | | |
-| | Enter either option where prompted | Valid input brings user to death/retry screen or next level | Pass | ![screenshot](documentation/feature03a.png) |
-| Invalid Input/ Try Again | | | | |
-| | Enter one of two supplied options | Valid input brings user to death/retry screen or next level | Pass | ![screenshot](documentation/feature05.png) |
+| | Select either option where prompted | Option selection brings user to death/retry screen or next level | Pass | ![screenshot](documentation/feature03a.png) |
+| Try Again | | | | |
+| | Choose wether to play again or not | Option selection brings user to Rules/Game choice screen or intro | Pass | ![screenshot](documentation/feature05.png) |
 
 ## User Story Testing
 
