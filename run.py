@@ -1,4 +1,4 @@
-""" imports """
+"""imports."""
 import os
 import art
 from simple_term_menu import TerminalMenu
@@ -7,6 +7,7 @@ HAS_WON = False
 
 
 def go_back():
+    """Reusable function to bring the user back to welcome screen."""
     options = ["Back"]
     terminal_menu = TerminalMenu(options)
     menu_entry_index = terminal_menu.show()
@@ -17,6 +18,7 @@ def go_back():
 
 
 def cat_human_options():
+    """Asks the user to verify their humanity with two menu options."""
     options = ["Human", "Cat"]
     terminal_menu = TerminalMenu(options, title = "Please verify your "
     "humanity by \nselecting your species, no cats allowed!:")
@@ -31,6 +33,7 @@ def cat_human_options():
 
 
 def rules():
+    """Instructions for how to play the game and option to go back."""
     print("At each step in your path, you will be faced with a choice.")
     print("This choice could lead to your death, or your salvation. So choose"
           " wisely.")
@@ -41,6 +44,7 @@ def rules():
     
 
 def main_menu():
+    """Menu shown when user is asked if they want to try again."""
     options = ["Rules", "Game"]
     terminal_menu = TerminalMenu(options)
     menu_entry_index = terminal_menu.show()
@@ -53,16 +57,19 @@ def main_menu():
 
 
 def clear():
-    """
-    Clear function to clean-up the terminal so things don't get messy.
+    """Clear function to clean-up the terminal so things don't get messy.
     From Stack Overflow.
     """
     os.system("cls" if os.name == "nt" else "clear")
 
 
 def play_again():
+    """Called by try_again to ask wether the player wants to play again.
+    Will send them to intro or main_menu.
+    """
     options = ["Yes", "No"]
-    terminal_menu = TerminalMenu(options, title = "-Would you like to try again?")
+    terminal_menu = TerminalMenu(options, title = "-Would you like to try "
+    "again?")
     menu_entry_index = terminal_menu.show()
     option = options[menu_entry_index]
     if option == "Yes":
@@ -76,9 +83,8 @@ def play_again():
 
 
 def try_again():
-    """
-    Asks the user if they want to try the game again.
-    Sends them back to the start or closes the program.
+    """Asks the user if they want to try the game again.
+    Sends them to the start or closes the program.
     """
     global HAS_WON
     while True:
@@ -86,10 +92,9 @@ def try_again():
 
 
 def welcome():
-    """
-    Called when program is run.
-    This is the title page where the game is started by verifying users
-    humanity.
+    """Called when program is run.
+    This is the title page where the user is presented with the options to
+    look at the rules or start the game.
     """
     clear()
     print(art.title)
@@ -104,6 +109,8 @@ def welcome():
 
 
 def intro_options():
+    """Two options presented to the user following the level story.
+    Calls try_again if they fail, calls next level if they succeed."""
     options = ["Creep towards the growling to investigate.", 
     "Run away from the growling as fast as possible."]
     terminal_menu = TerminalMenu(options, title = "-What do you do?")
@@ -123,10 +130,7 @@ def intro_options():
 
 
 def intro():
-    """
-    Story introduction, gives the first question to user, is the first level 
-    of the game.
-    """
+    """Initial level story, shows intro_options menu."""
     global HAS_WON
     HAS_WON = False
     clear()
@@ -140,6 +144,8 @@ def intro():
 
 
 def dirt_options():
+    """Two options presented to the user following the level story.
+    Calls try_again if they fail, calls next level if they succeed."""
     options = ["Left", "Right"]
     terminal_menu = TerminalMenu(options, title = "Stumbling through "
     "the tall trees and thick vegetation, you run straight onto a \n"
@@ -160,9 +166,7 @@ def dirt_options():
 
 
 def dirt_path():
-    """
-    Second level of the game from going down the correct path.
-    """
+    """Second level story, shows dirt_options menu."""
     clear()
     print("You dash back, away from the growling and through the forest.")
     print("You try to orient yourself, the sun appears to be low in the sky. "
@@ -173,6 +177,8 @@ def dirt_path():
 
 
 def stone_options():
+    """Two options presented to the user following the level story.
+    Calls try_again if they fail, calls next level if they succeed."""
     options = ["I keep moving forward.", "I turn back."]
     terminal_menu = TerminalMenu(options, title = "-What do you do?")
     menu_entry_index = terminal_menu.show()
@@ -200,9 +206,7 @@ def stone_options():
 
 
 def stone_passage():
-    """
-    Third level of the game from going down the correct path.
-    """
+    """Third level story, shows stone_options menu."""
     clear()
     print("This path gets narrower and narrower the farther you go.")
     print("It is getting quite hard to see. You start using your hands to "
@@ -220,6 +224,8 @@ def stone_passage():
 
 
 def cavern_options():
+    """Two options presented to the user following the level story.
+    Calls try_again if they fail, calls next level if they succeed."""
     options = ["Left", "Right"]
     terminal_menu = TerminalMenu(options, title = "You see two more "
     "tunnels at the other end of this space,\nmaybe they lead out of "
@@ -253,9 +259,7 @@ def cavern_options():
 
 
 def cavern():
-    """
-    Fourth level of the game from going down the correct path.
-    """
+    """Fourth level story, shows cavern_options menu."""
     clear()
     print("You make your way deeper into the tunnel, tripping on stones in "
           "utter darkness.")
@@ -276,6 +280,8 @@ def cavern():
 
 
 def hillside_options():
+    """Two options presented to the user following the level story.
+    Calls try_again if they fail, calls next level if they succeed."""
     options = ["You go to the smoke on the hill.", "You go down "
     "to the road and into the town."]
     terminal_menu = TerminalMenu(options, title = "-Where do you "
@@ -307,9 +313,7 @@ def hillside_options():
 
 
 def hillside():
-    """
-    Fifth level of the game from going down the correct path.
-    """
+    """Fifth level story, shows hillside_options menu."""
     clear()
     print("You head into the tunnel, and after walking some distance in the "
           "darkness,\nyou start to get a very bad smell.")
@@ -338,6 +342,8 @@ def hillside():
 
 
 def camp_options():
+    """Two options presented to the user following the level story.
+    Calls try_again if they fail, calls next level if they succeed."""
     options = ["Run", "Fight"]
     terminal_menu = TerminalMenu(options, title = "-Do you run to "
             "safety, or do you fight?")
@@ -366,9 +372,7 @@ def camp_options():
 
 
 def camp():
-    """
-    Sixth level of the game from going down the correct path.
-    """
+    """Sixth level story, shows camp_options menu."""
     clear()
     print("You scan the hillside below and across from you, you see only "
           "birds and trees.")
@@ -400,6 +404,8 @@ def camp():
 
 
 def endgame_options():
+    """Two options presented to the user following the level story.
+    Calls try_again if they fail, calls art if they succeed."""
     options = ["Stay with this kind stranger", "Leave them and go your"
     " own way"]
     terminal_menu = TerminalMenu(options, title = "-What do you want "
@@ -447,9 +453,7 @@ def endgame_options():
 
 
 def endgame():
-    """
-    Final level of the game.
-    """
+    """Final level story, shows endgame_options menu."""
     global HAS_WON
     clear()
     print("Fearing for your life, you run as fast as you can away from what"
@@ -478,8 +482,7 @@ def endgame():
 
 
 if __name__ == "__main__":
-    """
-    Clears screen and calls welcome to start the game.
+    """Clears screen and calls welcome to start the game.
     """
     clear()
     welcome()
