@@ -6,6 +6,52 @@ from simple_term_menu import TerminalMenu
 HAS_WON = False
 
 
+def go_back():
+    options = ["Back"]
+    terminal_menu = TerminalMenu(options)
+    menu_entry_index = terminal_menu.show()
+    option = options[menu_entry_index]
+    if option == "Back":
+        clear()
+        welcome()
+
+
+def cat_human_options():
+    options = ["Human", "Cat"]
+    terminal_menu = TerminalMenu(options, title = "Please verify your "
+    "humanity by \nselecting your species, no cats allowed!:")
+    menu_entry_index = terminal_menu.show()
+    option = options[menu_entry_index]
+    if option == "Human":
+        intro()
+    else:
+        clear()
+        print("NO CATS ALLOWED!\n")
+        go_back()
+
+
+def rules():
+    print("At each step in your path, you will be faced with a choice.")
+    print("This choice could lead to your death, or your salvation. So choose"
+          " wisely.")
+    print("Be warned: This world is run by intelligent cats equipped with "
+          "opposable thumbs\nand ammunition. Keep your wits about you survivor"
+          ", and don't let the cats win.\n")
+    go_back()
+    
+
+def main_menu():
+    options = ["Rules", "Game"]
+    terminal_menu = TerminalMenu(options)
+    menu_entry_index = terminal_menu.show()
+    option = options[menu_entry_index]
+    if option == "Game":
+        cat_human_options()
+    else:
+        clear()
+        rules()
+
+
 def clear():
     """
     Clear function to clean-up the terminal so things don't get messy.
@@ -52,52 +98,6 @@ def try_again():
         #     print(f"{answer} Is not valid, please choose again.\n")
 
 
-def go_back():
-    options = ["Back"]
-    terminal_menu = TerminalMenu(options)
-    menu_entry_index = terminal_menu.show()
-    option = options[menu_entry_index]
-    if option == "Back":
-        main_menu()
-
-
-def cat_human_options():
-    options = ["Human", "Cat"]
-    terminal_menu = TerminalMenu(options, title = "-To begin, use the "
-    "arrow keys and enter key to verify your humanity by \nselecting "
-    "your species, no cats allowed!:")
-    menu_entry_index = terminal_menu.show()
-    option = options[menu_entry_index]
-    if option == "Human":
-        intro()
-    else:
-        clear()
-        print("NO CATS ALLOWED!\n")
-        go_back()
-
-
-def rules():
-    print("At each step in your path, you will be faced with a choice.")
-    print("This choice could lead to your death, or your salvation. So choose"
-          " wisely.")
-    print("Be warned: This world is run by intelligent cats equipped with "
-          "opposable thumbs\nand ammunition. Keep your wits about you survivor"
-          ", and don't let the cats win.\n")
-    go_back()
-    
-
-def main_menu():
-    options = ["Rules", "Game"]
-    terminal_menu = TerminalMenu(options)
-    menu_entry_index = terminal_menu.show()
-    option = options[menu_entry_index]
-    if option == "Game":
-        cat_human_options()
-    else:
-        clear()
-        rules()
-
-
 def welcome():
     """
     Called when program is run.
@@ -112,7 +112,7 @@ def welcome():
       "feat.\n"
     )
     print("-To begin, use the arrow keys and enter key to make your choice "
-    "selection")
+    "selection:")
     main_menu()
       #   human_verification = input("Verify your humanity by typing 'human' "
       #                              "here, no cats allowed!: ")
