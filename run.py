@@ -76,6 +76,16 @@ def cat_human_options():
         go_back()
 
 
+def rules():
+    print("At each step in your path, you will be faced with a choice.")
+    print("This choice could lead to your death, or your salvation. So choose"
+          " wisely.")
+    print("Be warned: This world is run by intelligent cats equipped with "
+          "opposable thumbs\nand ammunition. Keep your wits about you survivor"
+          ", and don't let the cats win.\n")
+    go_back()
+    
+
 def main_menu():
     options = ["Rules", "Game"]
     terminal_menu = TerminalMenu(options)
