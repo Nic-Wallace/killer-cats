@@ -102,17 +102,21 @@ Below is the flowchart of the main process of this Python program. It shows the 
 The primary functions used on this application are:
 
 - `welcome()`
-    - Displays title and welcome test. Verifies users humanity before calling intro.
-- `intro()`, `dirt_path()`, `stone_passage()`,`cavern()`, `hillside()`, `camp()`
+    - Displays title and welcome text. Asks the user to select either `Rules` or `Game`.
+- `intro()`, `dirt_path()`, `stone_passage()`,`cavern()`, `hillside()`, `camp()`, `endgame()`
     - Levels of the game: They print story text, user inputs answer which either progresses to next level or death scene with option to retry game.
-- `try_again()`
-    - Is called after player death scene, either restarts or terminates program.
+- `try_again()`, `play_again()`
+    - Is called after player death scene, directs user to welcome page or start of the game.
+- `cat_human_options()`
+    - Asks user to verify their species to gain access to the game, sends an error and prompt to select again, or starts
+    the game.
 
 ### Imports
 
 I've used the following Python package:
 
 - `os`: used for adding a `clear()` function
+- `TerminalMenu` : used to structure questions from `simple_term_menu`
 
 ## Testing
 
