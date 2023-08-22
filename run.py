@@ -83,19 +83,6 @@ def try_again():
     global HAS_WON
     while True:
         play_again()
-        # answer = input("Would you like to try again? (yes/no): ")
-        # if answer[0].lower().strip() == "y":
-        #     intro()
-        #     break
-        # elif answer[0].lower().strip() == "n":
-        #     clear()
-        #     if not HAS_WON:
-        #         print("Oh no, you let the cats win!")
-        #     print("Thank you for playing Killer Cats.")
-        #     break
-        # else:
-        #     clear()
-        #     print(f"{answer} Is not valid, please choose again.\n")
 
 
 def welcome():
@@ -114,17 +101,6 @@ def welcome():
     print("-To begin, use the arrow keys and enter key to make your choice "
     "selection:")
     main_menu()
-      #   human_verification = input("Verify your humanity by typing 'human' "
-      #                              "here, no cats allowed!: ")
-      #   if human_verification[0].lower().strip() == "h":
-      #       intro()
-      #       break
-      #   elif human_verification[0].lower().strip() == "c":
-      #       clear()
-      #       print("NO CATS ALLOWED!\n")
-      #   else:
-      #       clear()
-      #       print(f"{human_verification} Is not valid, please choose again.\n")
 
 
 def intro():
@@ -159,26 +135,6 @@ def intro():
             else:
                 dirt_path()
         options()
-      #   print("Option #1: Creep towards the growling to investigate.")
-      #   print("Option #2: Run away from the growling as fast as possible.\n")
-      #   answer = input("Which option will you choose? (1/2): ")
-      #   clear()
-      #   if answer.strip() == "1":
-      #       print("You creep towards the growling.")
-      #       print("The thick vegetation prevents you from seeing very far "
-      #             "ahead.")
-      #       print("But you continue on,")
-      #       print("...straight into an army of cats...\n")
-      #       print("Your last moments are a flurry of fur and hissing.")
-      #       print("You have failed.")
-      #       try_again()
-      #       break
-      #   elif answer.strip() == "2":
-      #       dirt_path()
-      #       break
-      #   else:
-      #       clear()
-      #       print(f"{answer} Is not valid, please choose again.\n")
 
 
 def dirt_path():
@@ -210,27 +166,6 @@ def dirt_path():
             else:
                 stone_passage()
         options()
-      #   print(
-      #       "Stumbling through the tall trees and thick vegetation, "
-      #       "you run straight onto a\nsmall dirt path. "
-      #       "It leads left, and right.\n"
-      #   )
-      #   answer = input("Which way do you go? (left/right): ")
-      #   clear()
-      #   if answer[0].lower().strip() == "l":
-      #       print("This path is dimly lit, you hear rustling in the bushes...")
-      #       print("The gurilla warfare faction of cats leap from the bushes "
-      #             "and attack.\n")
-      #       print("Your last moments are a flurry of fur and bullets.")
-      #       print("You are dead.")
-      #       try_again()
-      #       break
-      #   elif answer[0].lower().strip() == "r":
-      #       stone_passage()
-      #       break
-      #   else:
-      #       clear()
-      #       print(f"{answer} Is not valid, please choose again.\n")
 
 
 def stone_passage():
@@ -276,34 +211,6 @@ def stone_passage():
                 print("You are dead.")
                 try_again()
         options()
-      #   print("Option #1: You keep moving forward.")
-      #   print("Option #2: You turn back.\n")
-      #   answer = input("Which option will you choose? (1/2): ")
-      #   clear()
-      #   if answer.strip() == "1":
-      #       cavern()
-      #       break
-      #   elif answer.strip() == "2":
-      #       print("Turning around at this point is no easy feat, but you do "
-      #             "it anyway.")
-      #       print("You had a feeling something big and scary was waiting for "
-      #             "you,")
-      #       print("...and you're scared of the dark.")
-      #       print("After a long time, you start to see light at the end of the"
-      #             " tunnel")
-      #       print("Your eyes take a while to adjust to the brightness,")
-      #       print("But at this relieving sight you sprint towards it blindly")
-      #       print("The first thing you see is a trail of dust, rising up into "
-      #             "the air.")
-      #       print("Tracing it's source down to the ground, your eyes fall on a"
-      #             " group of\nangry cats, armed to the teeth.\n")
-      #       print("Your last moments are a flurry of fur and dust.")
-      #       print("You are dead.")
-      #       try_again()
-      #       break
-      #   else:
-      #       clear()
-      #       print(f"{answer} Is not valid, please choose again.\n")
 
 
 def cavern():
@@ -358,41 +265,6 @@ def cavern():
             else:
                 hillside()
         options()
-      #   print(
-      #       "You see two more tunnels at the other end of this space,"
-      #       "\nmaybe they lead out of here?\n"
-      #   )
-      #   answer = input("Which tunnel do you go through? (left/right): ")
-      #   clear()
-      #   if answer[0].lower().strip() == "l":
-      #       print("You make your way over to the left tunnel.")
-      #       print("The light slowly disappears as you move forawrds, then it "
-      #             "begins to come back,\nfrom a different source...")
-      #       print("It looks like you are approaching a hole in the ground of "
-      #             "this tunnel,\nand there is light spilling out of it.")
-      #       print("Once you reach it, you peer down, and wait for your eyes "
-      #             "to adjust.")
-      #       print("You see what looks like another cave, but this one is "
-      #             "filled with light,\nand must be the way out!")
-      #       print("You look for something to secure your rope to,\nand find "
-      #             "a column of stone that will work.")
-      #       print("You abseil down into this cave with ease and delight. "
-      #             "Outside you see lush trees\nand hills as you untie your "
-      #             "rope.")
-      #       print("You look around the cave, and upon looking a little deeper"
-      #             ",\nyou see a grizzly bear.")
-      #       print("It starts to rise... and drool.\n")
-      #       print("Your last moments are a flurry of fur and very, very, big"
-      #             " teeth.")
-      #       print("You are dead.")
-      #       try_again()
-      #       break
-      #   elif answer[0].lower().strip() == "r":
-      #       hillside()
-      #       break
-      #   else:
-      #       clear()
-      #       print(f"{answer} Is not valid, please choose again.\n")
 
 
 def hillside():
@@ -453,37 +325,6 @@ def hillside():
                 print("You are dead.")
                 try_again()
         options()
-      #   print("Option #1: You go to the smoke on the hill.")
-      #   print("Option #2: You go down to the road and into the town.\n")
-      #   answer = input("Which option will you choose? (1/2): ")
-      #   clear()
-      #   if answer.strip() == "1":
-      #       camp()
-      #       break
-      #   elif answer.strip() == "2":
-      #       print("You head down the hill and get to the road after checking"
-      #             " the coast is clear.")
-      #       print("Excited to possibly find people, you jog towards the "
-      #             "fortified town.")
-      #       print("The barricades on the road make the only entry option a "
-      #             "narrow path in and out.")
-      #       print("Creeping aound the corner of the gates, you clutch the gun"
-      #             ", ready to fire.")
-      #       print("You see a young man jump from resting at his post, an AK "
-      #             "strapped to his chest.")
-      #       print("A look of hope, then fear and sadness crosses his face as"
-      #             " he sees you,\nthen looks to his left where you see a "
-      #             "platoon of cats rushing in.")
-      #       print("They bypass the man and run straight for you.")
-      #       print("You empty your gun and reach for the knife, but it is no "
-      #             "use. They are too many.\n")
-      #       print("Your last moments are a flurry of fur and tiny knives.")
-      #       print("You are dead.")
-      #       try_again()
-      #       break
-      #   else:
-      #       clear()
-      #       print(f"{answer} Is not valid, please choose again.\n")
 
 
 def camp():
@@ -544,33 +385,6 @@ def camp():
                 print("You are dead.")
                 try_again()
         options()
-      #   answer = input("Do you run to safety, or do you stay to fight? (run/"
-      #                  "fight): ")
-      #   clear()
-      #   if answer[0].lower().strip() == "r":
-      #       endgame()
-      #       break
-      #   elif answer[0].lower().strip() == "f":
-      #       print("You stay, drawing your weapons to fight beside your new "
-      #             "friends.")
-      #       print("The rustling in the bushes spreads around you in a circle,"
-      #             " you're now trapped.")
-      #       print("Panic sets in, you feel the sweat gather on your forehead.")
-      #       print("Your companions look terrified but they are holding "
-      #             "position.")
-      #       print("Slowly, you see cats start to come out from the bushes, "
-      #             "snarling at you all.")
-      #       print("Your friends leap at them and attack, you follow suit.")
-      #       print("You take out a few of them in the fight, but you know "
-      #             "defeat is near.\n")
-      #       print("You fight well, but in the end your last moments are a "
-      #             "flurry of fur and snarls.")
-      #       print("You are dead.")
-      #       try_again()
-      #       break
-      #   else:
-      #       clear()
-      #       print(f"{answer} Is not valid, please choose again.\n")
 
 
 def endgame():
@@ -647,51 +461,6 @@ def endgame():
                 print(art.fireworks)
                 try_again()
         options()
-      #   print("Option #1: You stay with this kind stranger.")
-      #   print("Option #2: You leave them and go your own way.\n")
-      #   answer = input("What option will you choose? (1/2): ")
-      #   clear()
-      #   if answer.strip() == "1":
-      #       print("You stay with this person. But the feeling doesn't leave "
-      #             "you that \nsomething isn't right")
-      #       print("They are very elusive when you try to get a good look at "
-      #             "them, \nand the smell, what is that smell?")
-      #       print("You hear a humming noise. It's... It's coming from them? "
-      #             "You grab their hood \nand throw it back to reveal their "
-      #             "face...")
-      #       print("Your eyes lock onto their small furry features, you realise"
-      #             " that this is \nthree cats wearing a trenchcoat!\n")
-      #       print("Your last moments are a flurry of fur, and three shotguns.")
-      #       print("You are dead.")
-      #       try_again()
-      #       break
-      #   elif answer.strip() == "2":
-      #       HAS_WON = True
-      #       print("You aren't so trusting of this stranger, and when they "
-      #             "aren't looking, you \ngrab your backpack and make a run "
-      #             "for it.")
-      #       print("Luckily there is a lot of trees to run through, you only "
-      #             "hear shouting once \nyou reach a river and begin to swim "
-      #             "across.")
-      #       print("You turn back and see... three cats? They start shooting "
-      #             "but quickly stop once \nthey realise you have gotten away.")
-      #       print("Not taking any chances, you run through the forest for a "
-      #             "while, \nand see the settlement from another angle.")
-      #       print('"They must have been going around it and brought me with '
-      #             'them! I\'m much \ncloser than I was before!"')
-      #       print("Excited, you make your way to the city gates. You are met "
-      #             "with... \nPeople! Finally!")
-      #       print("You make your way inside, and let out a deep sigh. You get"
-      #             " the feeling that \nyou are finally safe.")
-      #       print("Congratulations! Thank you for playing Killer Cats!")
-      #       input("\nPress ENTER to continue")
-      #       clear()
-      #       print(art.fireworks)
-      #       try_again()
-      #       break
-      #   else:
-      #       clear()
-      #       print(f"{answer} Is not valid, please choose again.\n")
 
 
 if __name__ == "__main__":
