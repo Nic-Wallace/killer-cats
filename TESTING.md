@@ -22,7 +22,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | Verification | | | | |
 | | Select 'Human' where prompted | User will be brought to intro screen on valid entry | Pass | ![screenshot](documentation/feature01.png) |
 | Path Options | | | | |
-| | Select either option where prompted | Option selection brings user to death/retry screen or next level | Pass | ![screenshot](documentation/feature03a.png) |
+| | Select either option where prompted | Option selection brings user to death/retry screen or next level | Pass | ![screenshot](documentation/feature03.png) |
 | Try Again | | | | |
 | | Choose wether to play again or not | Option selection brings user to Rules/Game choice screen or intro | Pass | ![screenshot](documentation/feature05.png) |
 
@@ -31,11 +31,9 @@ Defensive programming was manually tested with the below user acceptance testing
 | User Story | Screenshot |
 | --- | --- |
 | As a new site user, I would like to have instructions, so that I can play the game with ease. | ![screenshot](documentation/feature00.png) |
-| As a new site user, I would like to have clear choices, so that I can make informed decisions at each level. | ![screenshot](documentation/feature03a.png) |
-| As a new site user, I would like to be informed of incorrect input, so that I can answer correctly. | ![screenshot](documentation/feature04.png) |
+| As a new site user, I would like to have clear choices, so that I can make informed decisions at each level. | ![screenshot](documentation/feature03.png) |
 | As a new site user, I would like to have the option to retry the game when I fail, so that I can finish the game without having to run the program again. | ![screenshot](documentation/feature05.png) |
 | As a returning site user, I would like to recognise the game, so that I can remember how the game goes. | ![screenshot](documentation/feature00.png) |
-| As a returning site user, I would like to see the input options, so that I can make informed in-game decisions. | ![screenshot](documentation/feature03b.png) |
 
 ## Bugs
 
