@@ -16,7 +16,6 @@ about how to play.
 
 - As a new site user, I would like to have instructions, so that I can play the game with ease.
 - As a new site user, I would like to have clear choices, so that I can make informed decisions at each level.
-- As a new site user, I would like to be informed of incorrect input, so that I can answer correctly.
 - As a new site user, I would like to have the option to retry the game when I fail, so that I can finish the game without having to run the program again.
 
 ### Returning Site Users
@@ -69,14 +68,14 @@ about how to play.
 
 ## Tools & Technologies Used
 
-- [CSS](https://en.wikipedia.org/wiki/CSS) used for the mock terminal, provided by Code Institute.
+- [Python](https://www.python.org) used as the back-end programming language to create the game in terminal.
+- [JavaScript](https://www.javascript.com) used for the mock terminal, provided by Code Institute.
+- [HTML](https://en.wikipedia.org/wiki/HTML) used for the mock terminal, provided by Code Institute.
+- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [GitHub](https://github.com) used for secure online code storage.
-- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
-- [HTML](https://en.wikipedia.org/wiki/HTML) used for the mock terminal, provided by Code Institute.
-- [JavaScript](https://www.javascript.com) used for the mock terminal, provided by Code Institute.
-- [Python](https://www.python.org) used as the back-end programming language to create the game in terminal.
+- [CSS](https://en.wikipedia.org/wiki/CSS) used for the mock terminal, provided by Code Institute.
 
 ## Data Model
 
