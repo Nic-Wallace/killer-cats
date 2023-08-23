@@ -111,7 +111,8 @@ def welcome():
 
 def intro_options():
     """Two options presented to the user following the level story.
-    Calls try_again if they fail, calls next level if they succeed."""
+    Calls try_again if they fail, calls next level if they succeed.
+    """
     options = ["Creep towards the growling to investigate.",
                "Run away from the growling as fast as possible."]
     terminal_menu = TerminalMenu(options, title="-What do you do?")
@@ -146,7 +147,8 @@ def intro():
 
 def dirt_options():
     """Two options presented to the user following the level story.
-    Calls try_again if they fail, calls next level if they succeed."""
+    Calls try_again if they fail, calls next level if they succeed.
+    """
     options = ["Left", "Right"]
     terminal_menu = TerminalMenu(options, title="Stumbling through "
                                  "the tall trees and thick vegetation, "
@@ -180,7 +182,8 @@ def dirt_path():
 
 def stone_options():
     """Two options presented to the user following the level story.
-    Calls try_again if they fail, calls next level if they succeed."""
+    Calls try_again if they fail, calls next level if they succeed.
+    """
     options = ["I keep moving forward.", "I turn back."]
     terminal_menu = TerminalMenu(options, title="-What do you do?")
     menu_entry_index = terminal_menu.show()
@@ -227,7 +230,8 @@ def stone_passage():
 
 def cavern_options():
     """Two options presented to the user following the level story.
-    Calls try_again if they fail, calls next level if they succeed."""
+    Calls try_again if they fail, calls next level if they succeed.
+    """
     options = ["Left", "Right"]
     terminal_menu = TerminalMenu(options, title="You see two more "
                                  "tunnels at the other end of this space,"
@@ -284,7 +288,8 @@ def cavern():
 
 def hillside_options():
     """Two options presented to the user following the level story.
-    Calls try_again if they fail, calls next level if they succeed."""
+    Calls try_again if they fail, calls next level if they succeed.
+    """
     options = ["You go to the smoke on the hill.", "You go down "
                "to the road and into the town."]
     terminal_menu = TerminalMenu(options, title="-Where do you "
@@ -346,7 +351,8 @@ def hillside():
 
 def camp_options():
     """Two options presented to the user following the level story.
-    Calls try_again if they fail, calls next level if they succeed."""
+    Calls try_again if they fail, calls next level if they succeed.
+    """
     options = ["Run", "Fight"]
     terminal_menu = TerminalMenu(options, title="-Do you run to "
                                  "safety, or do you fight?")
@@ -408,7 +414,8 @@ def camp():
 
 def endgame_options():
     """Two options presented to the user following the level story.
-    Calls try_again if they fail, calls art if they succeed."""
+    Calls try_again if they fail, calls art if they succeed.
+    """
     options = ["Stay with this kind stranger", "Leave them and go your"
                " own way"]
     terminal_menu = TerminalMenu(options, title="-What do you want "
