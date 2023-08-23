@@ -203,6 +203,7 @@ You can fork this repository by using the following steps:
 | [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
 | [Real Python](https://realpython.com/python-f-strings/) | title | when to use the different f-strings |
 | [YouTube](https://www.youtube.com/watch?v=DEcFCn2ubSg) | run.py | using `.lower().strip()` to check answers |
+| [Python Package Index](https://pypi.org/project/simple-term-menu/#description) | run.py | simple terminal menu module |
 
 ### Media
 
