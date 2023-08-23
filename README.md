@@ -35,7 +35,7 @@ about how to play.
 
 - **Verification**
 
-    - At the end of the welcome screen, if the user selects `game`, they are prompted to verify their humanity. This is a fun feature, reinforcing the game narrative of "killer cats".
+    - At the end of the welcome screen, if the user selects "Game", they are prompted to verify their humanity. This is a fun feature, reinforcing the game narrative of "killer cats".
 
 ![screenshot](documentation/feature01.png)
 
@@ -94,7 +94,7 @@ Below is the flowchart of the main process of this Python program. It shows the 
 The primary functions used on this application are:
 
 - `welcome()`
-    - Displays title and welcome text. Asks the user to select either `Rules` or `Game`.
+    - Displays title and welcome text. Asks the user to select either "Rules" or "Game".
 - `intro()`, `dirt_path()`, `stone_passage()`,`cavern()`, `hillside()`, `camp()`, `endgame()`
     - Levels of the game: They print story text, user inputs answer which either progresses to next level or death scene with option to retry game.
 - `try_again()`, `play_again()`
