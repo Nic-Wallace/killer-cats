@@ -1,7 +1,7 @@
 """imports."""
 import os
-import art
 from simple_term_menu import TerminalMenu
+import art
 
 HAS_WON = False
 
