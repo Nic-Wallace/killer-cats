@@ -102,6 +102,7 @@ The primary functions used on this application are:
 - `cat_human_options()`
     - Asks user to verify their species to gain access to the game, sends an error and prompt to select again, or starts
     the game.
+- There are also some additional functions that help control the workflow of the application.
 
 ### Imports
 
